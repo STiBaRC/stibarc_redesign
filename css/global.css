@@ -32,7 +32,7 @@ img {
 	max-width: 100%;
 	border: 0;
 }
-h1, h2 {
+h1, h2, h3 {
     color: var(--primary);
 }
 /* colors */
@@ -45,3 +45,7 @@ h1, h2 {
 .primary-bg { background-color: var(--primary); }
 .primaryLight-bg { background-color: var(--primaryLight); }
 .primaryDark-bg { background-color: var(--primaryDark); }
+/* margins */
+.margin-top{
+    margin-top: 3rem;
+}
