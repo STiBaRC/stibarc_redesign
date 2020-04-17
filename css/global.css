@@ -1,5 +1,5 @@
-@import './inc/include.css'; /* <- Be sure to include this ontainers etc. */
-
+@import './inc/include.css';
+/* Be sure to include ^ */
 * {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
