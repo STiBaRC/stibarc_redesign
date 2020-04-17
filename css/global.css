@@ -38,6 +38,36 @@ img {
 h1, h2, h3 {
     color: var(--primary);
 }
+/* hero */
+.hero{
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+}
+.hero.large{
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.hero.primary{
+    background-color: var(--primary);
+    color: var(--temp);
+}
+.hero.primary h1, .hero.primary h2{
+    color: var(--white);
+}
+.hero.large h1{
+    font-size: 2.75rem;
+}
+.hero.primary a{
+    color: var(--white);
+}
+.hero.primary a:hover{
+    text-decoration: underline;
+}
+.hero.large p{
+    margin-bottom: 2rem;
+}
 /* - colors - */
 /* text colors */
 .default-text { color: var(--text); }
