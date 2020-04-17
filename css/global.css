@@ -19,7 +19,14 @@ body {
 	color: var(--textGray);
 }
 a {
+    color: var(--primary);
 	text-decoration: none;
+}
+a:hover {
+    color: var(--primaryLight);
+}
+a:active {
+    color: var(--primary);
 }
 img {
 	max-width: 100%;
