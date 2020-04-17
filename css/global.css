@@ -41,11 +41,6 @@ h1, h2, h3 {
 /* hero */
 .hero{
     display: block;
-    padding: 10px;
-    border-radius: 8px;
-}
-.hero.large{
-    display: block;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -64,6 +59,9 @@ h1, h2, h3 {
 }
 .hero.primary a:hover{
     text-decoration: underline;
+}
+.hero p{
+    margin-bottom: 1.5rem;
 }
 .hero.large p{
     margin-bottom: 2rem;
