@@ -1,7 +1,10 @@
+/* include.css */
 @import './inc/include.css';
-/* Be sure to include ^ */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500&display=swap');
+
 * {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
 		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	-webkit-font-smoothing: antialiased;
@@ -35,17 +38,27 @@ img {
 h1, h2, h3 {
     color: var(--primary);
 }
-/* colors */
+/* - colors - */
+/* text colors */
+.default-text { color: var(--text); }
 .primary-text { color: var(--primary); }
 .primaryLight-text { color: var(--primaryLight); }
 .primaryDark-text { color: var(--primaryDark); }
 .white-text { color: var(--white); }
 .temp-text { color: var(--temp); }
-.gray-text { color: var(--outline); }
+.outline-text { color: var(--outline); }
+/* bg colors */
+.default-bg { background-color: var(--white); }
 .primary-bg { background-color: var(--primary); }
 .primaryLight-bg { background-color: var(--primaryLight); }
 .primaryDark-bg { background-color: var(--primaryDark); }
+.white-bg { background-color: var(--white); }
+.temp-bg { background-color: var(--temp); }
+.outline-bg { background-color: var(--outline); }
 /* margins */
 .margin-top{
     margin-top: 3rem;
+}
+.margin-bottom{
+    margin-bottom: 3rem;
 }
