@@ -30,6 +30,12 @@
 .center, .center-align { text-align: center; }
 .left { float: left !important; }
 .right { float: right !important; }
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* flow-text */
 @media only screen and (min-width: 360px) { .flow-text { font-size: 1.2rem; } }
 @media only screen and (min-width: 390px) { .flow-text { font-size: 1.224rem; } }

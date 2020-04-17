@@ -55,10 +55,3 @@ h1, h2, h3 {
 .white-bg { background-color: var(--white); }
 .temp-bg { background-color: var(--temp); }
 .outline-bg { background-color: var(--outline); }
-/* margins */
-.margin-top{
-    margin-top: 3rem;
-}
-.margin-bottom{
-    margin-bottom: 3rem;
-}
