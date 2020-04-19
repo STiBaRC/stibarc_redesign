@@ -66,6 +66,47 @@ h1, h2, h3 {
 .hero.large p{
     margin-bottom: 2rem;
 }
+.button{
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--fill);
+    color: var(--text);
+    border: 1px solid var(--outline);
+}
+.button:hover{
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--text);
+}
+.button:active{
+    text-decoration: none;
+    background-color: var(--temp);
+    color: var(--text);
+}
+.button.primary{
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+}
+.button.primary:hover{
+    background-color: var(--primaryLightAlt);
+    border-color: var(--primaryLightAlt);
+}
+.button.primary:active{
+    background-color: var(--primaryDark);
+    border-color: var(--primaryDark)
+}
+
 /* - colors - */
 /* text colors */
 .default-text { color: var(--text); }
