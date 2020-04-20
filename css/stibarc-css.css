@@ -5,3 +5,6 @@
 .margin-bottom{
     margin-bottom: 5rem;
 }
+.button.nav{
+    margin-right: .75rem;
+}
