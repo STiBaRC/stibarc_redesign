@@ -75,23 +75,24 @@ h1, h2, h3 {
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: .5rem 1rem;
+    padding: .5rem 1.5rem;
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
-    background-color: var(--fill);
-    color: var(--text);
-    border: 1px solid var(--outline);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--primary);
 }
 .button:hover{
     text-decoration: none;
-    background-color: var(--white);
-    color: var(--text);
+    color: var(--primaryLight);
 }
 .button:active{
     text-decoration: none;
-    background-color: var(--temp);
-    color: var(--text);
+    color: var(--primaryDark);
+}
+.button:focus{
+    text-decoration: none;
 }
 .button.primary{
     background-color: var(--primary);
@@ -105,6 +106,30 @@ h1, h2, h3 {
 .button.primary:active{
     background-color: var(--primaryDark);
     border-color: var(--primaryDark)
+}
+.button.alt{
+    background-color: var(--fill);
+    color: var(--text);
+    border: 1px solid var(--outline);
+}
+.button.alt:hover{
+    background-color: var(--white);
+    color: var(--text);
+}
+.button.alt:active{
+    background-color: var(--temp);
+    color: var(--text);
+}
+.button.nav{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    border-color: var(--white);
+}
+.button.nav:hover{
+    background-color: rgba(255, 255, 255, 0.18);
+}
+.button.nav:active{
+    background-color: var(--primaryLightAlt);
 }
 
 /* - colors - */
