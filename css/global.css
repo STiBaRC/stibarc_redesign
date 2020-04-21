@@ -131,6 +131,17 @@ h1, h2, h3 {
 .button.nav:active{
     background-color: var(--primaryLightAlt);
 }
+/* cards */
+.card{
+    background-color: var(--fill);
+    border: 1px solid var(--outline);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--text);
+}
+.card h1, .card h2{
+    color: var(--text);
+}
 
 /* - colors - */
 /* text colors */
