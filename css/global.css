@@ -126,7 +126,7 @@ h1, h2, h3 {
     border-color: var(--white);
 }
 .button.nav:hover{
-    background-color: var(--alpha);
+    background-color: var(--alphaHover);
 }
 .button.nav:active{
     background-color: var(--primaryLightAlt);
