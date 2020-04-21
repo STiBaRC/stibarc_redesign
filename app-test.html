@@ -1,0 +1,100 @@
+<!--
+CSS testing
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>STiBaRC</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+
+        <style>
+            .logo {
+              display: block;
+              margin: auto;
+              max-width: 225px;
+              margin: 2rem auto;
+            }
+            .card-alt {
+            }
+            .app-card {
+              max-width: 750px;
+              margin: auto;
+            }
+            .card-alt .top {
+              display: flex;
+              align-items: center;
+              border: 1px solid var(--alphaHover);
+              background-color: var(--alphaHover);
+              border-bottom: none;
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+              padding: .5rem 1.5rem;
+            }
+            .fill {
+              display: inline-block;
+              flex-grow: 1;
+            }
+            .app-title{
+              display: block;
+            }
+            .subtitle{
+              display: block;
+              font-size: 1rem;
+              color: rgba(255,255,255,0.35);
+              margin-bottom: .75rem;
+            }
+            .app-logo {
+              width: 75px;
+              border-radius: 50%;
+            }
+            .app-body {
+              border-bottom-left-radius: 8px;
+              border-bottom-right-radius: 8px;
+              border: 1px solid var(--alphaHover);
+              background-color: var(--alpha);
+              padding: 2rem 1.5rem 1.5rem 1.5rem;
+              color: rgba(255, 255, 255, 0.35);
+            }
+            .app-buttons {
+              margin-top: 2.5rem;
+              display: flex;
+              align-items: center;
+            }
+            .app-buttons .button {
+              margin-left: 0.75rem;
+            }
+        </style>
+    </head>
+    <body class="white-text primary-bg">
+      <div class="container">
+        <div class="card-alt">
+          <a href="./"><img class="logo" src="https://stibarc.github.io/stibarc_redesign/logo.png"></a>
+          <div class="app-card">
+            <div class="top">
+              <h1 class="white-text app-title">
+                <div class="subtitle">Connect to STiBaRC</div>App title
+              </h1>
+              <span class="fill"></span>
+              <img class="app-logo" src="https://stibarc.com/icon.png">
+            </div>
+            <div class="app-body">
+              <div class="">This will allow <b>App title</b> to</div>
+              <br>
+              <div class="app-buttons">
+                <span class="fill"></span>
+                <button class="button nav">Cancel</button><button class="button">Authorize</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </body>
+</html>
