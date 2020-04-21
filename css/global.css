@@ -38,7 +38,7 @@ img {
 h1, h2, h3 {
     color: var(--primary);
 }
-.upercase{
+.uppercase{
     text-transform: uppercase;
 }
 .lowercase{
