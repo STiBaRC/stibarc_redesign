@@ -49,17 +49,6 @@ CSS testing
                 color: var(--alphaActive);
                 margin-top: .75rem;
             }
-            .app-card .app-top a{
-                color: var(--alphaHover);
-            }
-            .app-card .app-top a:hover{
-                text-decoration: underline;
-                color: var(--alphaActive);
-            }
-            .app-card .app-top a:active{
-                text-decoration: underline;
-                color: var(--primaryDark);
-            }
             .app-card .app-logo {
                 background: var(--alpha) center center no-repeat;
                 background-size: cover;
@@ -83,6 +72,17 @@ CSS testing
                 color: var(--alphaActive);
                 display: flex;
                 align-items: center;
+            }
+            .app-card .app-footer a{
+                color: var(--alphaHover);
+            }
+            .app-card .app-footer a:hover{
+                text-decoration: underline;
+                color: var(--alphaActive);
+            }
+            .app-card .app-footer a:active{
+                text-decoration: underline;
+                color: var(--primaryDark);
             }
             .app-card .app-footer .button {
                 margin-left: 0.75rem;
@@ -132,7 +132,7 @@ CSS testing
             
             <div class="app-card">
                 <div class="app-top">
-                    <h1 class="white-text app-title"><div class="top-subtitle">Connect the STiBaRC app</div>App title<div class="subtitle"><span>to <b>Username</b></span>&nbsp;&nbsp;<a href="#"><i>Not you?</i></a></div></h1>
+                    <h1 class="white-text app-title"><div class="top-subtitle">Connect to STiBaRC</div>App title<div class="subtitle"><i>By UserName on 3/22/2020</i></div></h1>
                     <span class="flex-grow"></span> <div class="app-logo" style="background-image: url('https://stibarc.com/icon.png');"></div>
                 </div>
                 <div class="app-body">
@@ -145,7 +145,7 @@ CSS testing
                     </ul>
                 </div>
                 <div class="app-footer">
-                    <small><i>Created by Username on 3/22/2020</i></small>
+                    <span><span>Signed in as <b>Username</b></span>&nbsp;&nbsp;<a href="#"><i>Not you?</i></a></span>
                     <span class="flex-grow"></span>
                     <button class="button nav">Cancel</button><button class="button">Authorize</button>
                 </div>
