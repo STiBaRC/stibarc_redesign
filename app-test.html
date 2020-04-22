@@ -35,12 +35,20 @@ CSS testing
                 border-top-right-radius: 8px;
                 padding: .5rem 1.5rem;
             }
+            .app-card .app-title {
+                white-space: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             .app-card .top-subtitle {
                 display: block;
                 font-size: 1rem;
                 font-weight: 500;
                 color: var(--alphaActive);
                 margin-bottom: .5rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .app-card .subtitle {
                 display: block;
@@ -48,13 +56,18 @@ CSS testing
                 font-weight: 400;
                 color: var(--alphaActive);
                 margin-top: .75rem;
+                white-space: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .app-card .app-logo {
                 background: var(--alpha) center center no-repeat;
                 background-size: cover;
+                display: inline-block;
                 width: 75px;
                 height: 75px;
                 border-radius: 50%;
+                margin-left: 4px;
             }
             .app-card .app-body {
                 border: 1px solid var(--alphaHover);
@@ -73,14 +86,14 @@ CSS testing
                 display: flex;
                 align-items: center;
             }
-            .app-card .app-footer a{
+            .app-card .app-footer a {
                 color: var(--alphaHover);
             }
-            .app-card .app-footer a:hover{
+            .app-card .app-footer a:hover {
                 text-decoration: underline;
                 color: var(--alphaActive);
             }
-            .app-card .app-footer a:active{
+            .app-card .app-footer a:active {
                 text-decoration: underline;
                 color: var(--primaryDark);
             }
@@ -114,6 +127,7 @@ CSS testing
                 background: var(--white);
                 border-radius: 50%;
                 padding: 0;
+                white-space: nowrap;
             }
             .perms li .material-icons.x {
                 color: rgb(196, 35, 35);
@@ -121,6 +135,7 @@ CSS testing
             .perms li .text {
                 display: inline-block;
                 vertical-align: middle;
+                word-wrap: break-word;
             }
         </style>
     </head>
@@ -145,7 +160,7 @@ CSS testing
                     </ul>
                 </div>
                 <div class="app-footer">
-                    <span><span>Signed in as <b>Username</b></span>&nbsp;&nbsp;<a href="#"><i>Not you?</i></a></span>
+                    <span><span>Signed in as <b>Username</b></span>&nbsp; <a href="#"><i>Not you?</i></a></span>
                     <span class="flex-grow"></span>
                     <button class="button nav">Cancel</button><button class="button">Authorize</button>
                 </div>
