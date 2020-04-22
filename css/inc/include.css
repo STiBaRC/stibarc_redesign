@@ -36,6 +36,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.flex-grow {
+    display: inline-block;
+    flex-grow: 1;
+}
 /* flow-text */
 @media only screen and (min-width: 360px) { .flow-text { font-size: 1.2rem; } }
 @media only screen and (min-width: 390px) { .flow-text { font-size: 1.224rem; } }

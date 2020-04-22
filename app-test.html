@@ -16,85 +16,108 @@ CSS testing
 
         <style>
             .logo {
-              display: block;
-              margin: auto;
-              max-width: 225px;
-              margin: 2rem auto;
-            }
-            .card-alt {
+                display: block;
+                margin: auto;
+                height: 50px;
+                margin: 2rem auto;
             }
             .app-card {
-              max-width: 750px;
-              margin: auto;
+                max-width: 700px;
+                margin: auto;
             }
-            .card-alt .top {
-              display: flex;
-              align-items: center;
-              border: 1px solid var(--alphaHover);
-              background-color: var(--alphaHover);
-              border-bottom: none;
-              border-top-left-radius: 8px;
-              border-top-right-radius: 8px;
-              padding: .5rem 1.5rem;
+            .app-card .app-top {
+                display: flex;
+                align-items: center;
+                border: 1px solid var(--alphaHover);
+                background-color: var(--alphaHover);
+                border-bottom: none;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                padding: .5rem 1.5rem;
             }
-            .fill {
-              display: inline-block;
-              flex-grow: 1;
+            .app-card .top-subtitle {
+                display: block;
+                font-size: 1rem;
+                color: var(--alphaActive);
+                margin-bottom: .5rem;
             }
-            .app-title{
-              display: block;
+            .app-card .app-logo {
+                background: var(--alpha) center center no-repeat;
+                background-size: cover;
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
             }
-            .subtitle{
-              display: block;
-              font-size: 1rem;
-              color: rgba(255,255,255,0.35);
-              margin-bottom: .75rem;
+            .app-card .app-body {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border: 1px solid var(--alphaHover);
+                background-color: var(--alpha);
+                padding: 1.75rem 1.5rem 1.5rem 1.5rem;
+                color: var(--alphaActive);
             }
-            .app-logo {
-              width: 75px;
-              border-radius: 50%;
+            .app-card .app-footer {
+                margin-top: 2.5rem;
+                display: flex;
+                align-items: center;
             }
-            .app-body {
-              border-bottom-left-radius: 8px;
-              border-bottom-right-radius: 8px;
-              border: 1px solid var(--alphaHover);
-              background-color: var(--alpha);
-              padding: 2rem 1.5rem 1.5rem 1.5rem;
-              color: rgba(255, 255, 255, 0.35);
+            .app-card .app-footer .button {
+                margin-left: 0.75rem;
             }
-            .app-buttons {
-              margin-top: 2.5rem;
-              display: flex;
-              align-items: center;
+            .perms{
+                display: block;
+                margin-top: 1.5rem;
             }
-            .app-buttons .button {
-              margin-left: 0.75rem;
+            .perms li {
+                color: var(--white) !important;
+            }
+            .perms ul {
+                margin-left: 1rem;
+                list-style: none;
+            }
+            .perms li {
+                list-style: none;
+                margin-bottom: .25rem;
+            }
+            .perms li:before {
+                content: '\2714';
+                margin-left: -20px;
+                margin-right: 15px;
+            }
+            .perms li.x:before {
+                content: '\274C';
             }
         </style>
     </head>
     <body class="white-text primary-bg">
-      <div class="container">
-        <div class="card-alt">
-          <a href="./"><img class="logo" src="https://stibarc.github.io/stibarc_redesign/logo.png"></a>
-          <div class="app-card">
-            <div class="top">
-              <h1 class="white-text app-title">
-                <div class="subtitle">Connect to STiBaRC</div>App title
-              </h1>
-              <span class="fill"></span>
-              <img class="app-logo" src="https://stibarc.com/icon.png">
+        
+        <div class="container">
+            
+            <a href="./"><img class="logo" src="https://stibarc.github.io/stibarc_redesign/logo.png"></a>
+            
+            <div class="app-card">
+                <div class="app-top">
+                    <h1 class="white-text app-title"><div class="top-subtitle">Connect to STiBaRC</div>App title </h1>
+                    <span class="flex-grow"></span> <div class="app-logo" style="background-image: url('https://stibarc.com/icon.png');"></div>
+                </div>
+                <div class="app-body">
+                    <div>This will allow <b>App title</b> to</div>
+                    <ul class="perms">
+                        <li>Do everything as you</li>
+                        <li>Post on your behalf</li>
+                        <li>View and change your username/profile image</li>
+                        <li class="x">Make someone love you</li>
+                    </ul>
+                    <div class="app-footer">
+                        <span class="flex-grow"></span>
+                        <button class="button nav">Cancel</button><button class="button">Authorize</button>
+                    </div>
+                </div>
             </div>
-            <div class="app-body">
-              <div class="">This will allow <b>App title</b> to</div>
-              <br>
-              <div class="app-buttons">
-                <span class="fill"></span>
-                <button class="button nav">Cancel</button><button class="button">Authorize</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br><br>
+            
+        </div><!-- / container -->
+        
+        <br><br>
+        
     </body>
 </html>
