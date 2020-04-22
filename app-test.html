@@ -49,15 +49,19 @@ CSS testing
                 border-radius: 50%;
             }
             .app-card .app-body {
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: 8px;
                 border: 1px solid var(--alphaHover);
+                border-bottom: none;
                 background-color: var(--alpha);
                 padding: 1.75rem 1.5rem 1.5rem 1.5rem;
                 color: var(--alphaActive);
             }
             .app-card .app-footer {
-                margin-top: 2.5rem;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border: 1px solid var(--alphaHover);
+                background-color: var(--alpha);
+                padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                color: var(--alphaActive);
                 display: flex;
                 align-items: center;
             }
@@ -66,7 +70,7 @@ CSS testing
             }
             .perms{
                 display: block;
-                margin-top: 1.5rem;
+                margin: 1.5rem 0 1rem 0;
             }
             .perms li {
                 color: var(--white) !important;
@@ -79,13 +83,25 @@ CSS testing
                 list-style: none;
                 margin-bottom: .5rem;
             }
-            .perms li:before {
-                content: '\2714';
-                margin-left: -20px;
-                margin-right: 15px;
+            .perms li {
+                margin-left: -15px;
             }
-            .perms li.x:before {
-                content: '\274C';
+            .perms li .material-icons{
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                color: rgb(24, 195, 37);
+                background: var(--white);
+                border-radius: 50%;
+                padding: 0;
+            }
+            .perms li .material-icons.x{
+                color: rgb(196, 35, 35);
+            }
+            .perms li .text{
+                display: inline-block;
+                vertical-align: middle;
             }
         </style>
     </head>
@@ -103,15 +119,16 @@ CSS testing
                 <div class="app-body">
                     <div>This will allow <b>App title</b> to</div>
                     <ul class="perms">
-                        <li>Do everything as you</li>
-                        <li>Post on your behalf</li>
-                        <li>View and change your username/profile image</li>
-                        <li class="x">Teach you how to love</li>
+                        <li><span class="material-icons">check_circle</span><span class="text">Do everything as you</span></li>
+                        <li><span class="material-icons">check_circle</span><span class="text">Post on your behalf</span></li>
+                        <li><span class="material-icons">check_circle</span><span class="text">View and change your username/profile image</span></li>
+                        <li><span class="material-icons x">cancel</span><span class="text">Teach you how to love</span></li>
                     </ul>
-                    <div class="app-footer">
-                        <span class="flex-grow"></span>
-                        <button class="button nav">Cancel</button><button class="button">Authorize</button>
-                    </div>
+                </div>
+                <div class="app-footer">
+                    <small><i>Created by UserName on 3/22/2020</i></small>
+                    <span class="flex-grow"></span>
+                    <button class="button nav">Cancel</button><button class="button">Authorize</button>
                 </div>
             </div>
             
