@@ -118,6 +118,17 @@ h1, h2, h3 {
     background-color: var(--primaryDark);
     border-color: var(--primaryDark)
 }
+.button.primaryAlt{
+    background-color: var(--alpha);
+    color: var(--white);
+    border-color: var(--white);
+}
+.button.primaryAlt:hover{
+    background-color: var(--alphaHover);
+}
+.button.primaryAlt:active{
+    background-color: var(--primaryLightAlt);
+}
 .button.alt{
     background-color: var(--fill);
     color: var(--text);
@@ -130,17 +141,6 @@ h1, h2, h3 {
 .button.alt:active{
     background-color: var(--temp);
     color: var(--text);
-}
-.button.nav{
-    background-color: var(--alpha);
-    color: var(--white);
-    border-color: var(--white);
-}
-.button.nav:hover{
-    background-color: var(--alphaHover);
-}
-.button.nav:active{
-    background-color: var(--primaryLightAlt);
 }
 /* cards */
 .card{
@@ -155,37 +155,62 @@ h1, h2, h3 {
 }
 /* form stuff */
 /* inputs */
-.input.nav{
-    border-radius: 25px;
-    border: 1px solid var(--white);
-    background-color: var(--primaryLight);
-    color: #ffffff;
+.input{
+    border-radius: 8px;
+    border: 1px solid var(--outline);
+    background-color: var(--fill);
+    color: var(--text);
     padding: .5rem 1.75rem;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
 }
-.input.nav:focus{
+.input:focus{
+    outline: none;
+    border-width: 2px;
+    border-color: var(--outline);
+    padding: calc(.5rem - 1px) calc(1.75rem - 1px);
+}
+.input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--outline);
+  opacity: 1;
+}
+.input:-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--alphaLight);
+}
+.input::-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--alphaLight);
+}
+.input.primaryAlt{
+    border-radius: 25px;
+    border: 1px solid var(--alphaLight);
+    background-color: var(--primaryLight);
+    color: var(--white);
+    padding: .5rem 1.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.input.primaryAlt:focus{
     outline: none;
     border-width: 2px;
     border-color: var(--white);
     padding: calc(.5rem - 1px) calc(1.75rem - 1px);
 }
-.input.nav::placeholder {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
-  opacity: 1;
+.input.primaryAlt::placeholder {
+  color: var(--alphaLight);
 }
-.input.nav:-ms-input-placeholder {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
+.input.primaryAlt:-ms-input-placeholder {
+  color: var(--alphaLight);
 }
-.input.nav::-ms-input-placeholder {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
+.input.primaryAlt::-ms-input-placeholder {
+  color: var(--alphaLight);
 }
 
 /* - colors - */
