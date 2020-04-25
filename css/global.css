@@ -189,7 +189,7 @@ h1, h2, h3 {
 }
 .input.primaryAlt{
     border-radius: 25px;
-    border: 1px solid var(--alphaLight);
+    border: 1px solid var(--white);
     background-color: var(--primaryLight);
     color: var(--white);
     padding: .5rem 1.75rem;
@@ -200,7 +200,6 @@ h1, h2, h3 {
 .input.primaryAlt:focus{
     outline: none;
     border-width: 2px;
-    border-color: var(--white);
     padding: calc(.5rem - 1px) calc(1.75rem - 1px);
 }
 .input.primaryAlt::placeholder {
