@@ -8,6 +8,7 @@
     --white: #ffffff;
     --temp: #e5e5e5;
     --text: #808080;
+    --alphaDark: rgba(255, 255, 255, 0.08);
     --alpha: rgba(255, 255, 255, 0.15);
     --alphaHover: rgba(255, 255, 255, 0.18);
     --alphaActive: rgba(255, 255, 255, 0.35);

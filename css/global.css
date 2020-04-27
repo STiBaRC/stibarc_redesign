@@ -128,7 +128,7 @@ h1, h2, h3 {
     background-color: var(--alphaHover);
 }
 .button.primaryAlt:active{
-    background-color: var(--primaryLightAlt);
+    background-color: var(--alphaDark);
 }
 .button.alt{
     background-color: var(--fill);
