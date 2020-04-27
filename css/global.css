@@ -81,12 +81,13 @@ h1, h2, h3 {
     display: inline-block;
     margin: 0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .95rem;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: .5rem 1.75rem;
+    padding: 8px 2rem;
+    font-size: 16px;
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
@@ -160,30 +161,30 @@ h1, h2, h3 {
     border: 1px solid var(--outline);
     background-color: var(--fill);
     color: var(--text);
-    padding: .5rem 1.75rem;
     text-decoration: none;
-    font-size: 1rem;
+    padding: 8px 2rem;
+    font-size: 16px;
     font-weight: 500;
 }
 .input:focus{
     outline: none;
     border-width: 2px;
     border-color: var(--outline);
-    padding: calc(.5rem - 1px) calc(1.75rem - 1px);
+    padding: calc(8px - 1px) calc(2rem - 1px);
 }
 .input::placeholder {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   color: var(--outline);
   opacity: 1;
 }
 .input:-ms-input-placeholder {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   color: var(--alphaLight);
 }
 .input::-ms-input-placeholder {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   color: var(--alphaLight);
 }
@@ -192,15 +193,10 @@ h1, h2, h3 {
     border: 1px solid var(--white);
     background-color: var(--primaryLight);
     color: var(--white);
-    padding: .5rem 1.75rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
 }
 .input.alt:focus{
     outline: none;
     border-width: 2px;
-    padding: calc(.5rem - 1px) calc(1.75rem - 1px);
 }
 .input.alt::placeholder {
   color: var(--alphaLight);
@@ -216,15 +212,10 @@ h1, h2, h3 {
     border: 1px solid var(--white);
     background-color: var(--primaryLight);
     color: var(--white);
-    padding: .5rem 1.75rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
 }
 .input.primaryAlt:focus{
     outline: none;
     border-width: 2px;
-    padding: calc(.5rem - 1px) calc(1.75rem - 1px);
 }
 .input.primaryAlt::placeholder {
   color: var(--alphaLight);
@@ -234,6 +225,36 @@ h1, h2, h3 {
 }
 .input.primaryAlt::-ms-input-placeholder {
   color: var(--alphaLight);
+}
+/* nav */
+.nav-margin {
+    margin-top: 6rem;
+}
+.nav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    background-color: #2263a6;
+    color: #ffffff;
+    box-shadow: 0px 1px 10px 0px rgba(40, 40, 40, .15);
+}
+.nav-container {
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+.nav .logo {
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav .nav-items {
+    
+}
+.nav .nav-items .primaryAlt {
+    margin-right: .75rem;
 }
 
 /* - colors - */
