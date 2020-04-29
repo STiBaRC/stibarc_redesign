@@ -236,8 +236,8 @@ h1, h2, h3 {
     position: fixed;
     z-index: 9999;
     top: 0;
-    background-color: #2263a6;
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--white);
     box-shadow: 0px 1px 10px 0px rgba(40, 40, 40, .15);
 }
 .nav-container {
@@ -245,10 +245,17 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
 }
-.nav .logo {
-    height: 25px;
+.nav .logo{
     display: inline-block;
     vertical-align: middle;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav .logo img {
+    height: 25px;
+}
+.nav a{
+    color: var(--white);
 }
 .nav .nav-items {
     
