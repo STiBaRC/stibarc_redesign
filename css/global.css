@@ -263,6 +263,11 @@ h1, h2, h3 {
 .nav .nav-items .primaryAlt {
     margin-right: .75rem;
 }
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: var(--temp);
+}
 
 /* - colors - */
 /* text colors */
