@@ -227,6 +227,9 @@ h1, h2, h3 {
   color: var(--alphaLight);
 }
 /* nav */
+.nav-height {
+    margin-top: 4.25rem;
+}
 .nav-margin {
     margin-top: 6rem;
 }
@@ -254,11 +257,8 @@ h1, h2, h3 {
 .nav .logo img {
     height: 25px;
 }
-.nav a{
+.nav a:not(.button){
     color: var(--white);
-}
-.nav .nav-items {
-    
 }
 .nav .nav-items .primaryAlt {
     margin-right: .75rem;
@@ -273,6 +273,7 @@ h1, h2, h3 {
 .white-text { color: var(--white); }
 .temp-text { color: var(--temp); }
 .outline-text { color: var(--outline); }
+.fill-text { color: var(--fill); }
 /* bg colors */
 .default-bg { background-color: var(--white); }
 .primary-bg { background-color: var(--primary); }
@@ -281,3 +282,4 @@ h1, h2, h3 {
 .white-bg { background-color: var(--white); }
 .temp-bg { background-color: var(--temp); }
 .outline-bg { background-color: var(--outline); }
+.fill-bg { background-color: var(--fill); }
