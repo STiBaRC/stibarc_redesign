@@ -86,8 +86,8 @@ h1, h2, h3 {
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 8px 2rem;
-    font-size: 16px;
+    padding: 7px 2rem;
+    font-size: 17px;
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
@@ -162,29 +162,29 @@ h1, h2, h3 {
     background-color: var(--fill);
     color: var(--text);
     text-decoration: none;
-    padding: 8px 2rem;
-    font-size: 16px;
+    padding: 7px 2rem;
+    font-size: 17px;
     font-weight: 500;
 }
 .input:focus{
     outline: none;
     border-width: 2px;
     border-color: var(--outline);
-    padding: calc(8px - 1px) calc(2rem - 1px);
+    padding: calc(7px - 1px) calc(2rem - 1px);
 }
 .input::placeholder {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--outline);
   opacity: 1;
 }
 .input:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--alphaLight);
 }
 .input::-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--alphaLight);
 }
