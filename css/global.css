@@ -81,12 +81,11 @@ h1, h2, h3 {
     display: inline-block;
     margin: 0;
     text-decoration: none;
-    font-size: .95rem;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 7px 2rem;
+    padding: 8px 2rem;
     font-size: 17px;
     border-radius: 25px;
     font-weight: 500;
@@ -162,7 +161,7 @@ h1, h2, h3 {
     background-color: var(--fill);
     color: var(--text);
     text-decoration: none;
-    padding: 7px 2rem;
+    padding: 8px 2rem;
     font-size: 17px;
     font-weight: 500;
 }
@@ -170,7 +169,7 @@ h1, h2, h3 {
     outline: none;
     border-width: 2px;
     border-color: var(--outline);
-    padding: calc(7px - 1px) calc(2rem - 1px);
+    padding: calc(8px - 1px) calc(2rem - 1px);
 }
 .input::placeholder {
   font-size: 17px;
