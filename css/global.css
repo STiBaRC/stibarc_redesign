@@ -284,13 +284,24 @@ h1, h2, h3 {
 .nav a:not(.button){
     color: var(--white);
 }
-.nav .nav-items .primaryAlt {
-    margin-right: .75rem;
-}
+/* more stuff */
 .divider {
     height: 1px;
     overflow: hidden;
     background-color: var(--temp);
+}
+/* margins */
+.m-top {
+    margin-top: .75rem;
+}
+.m-bottom {
+    margin-bottom: .75rem;
+}
+.m-right {
+    margin-right: .75rem;
+}
+.m-left {
+    margin-left: .75rem;
 }
 
 /* - colors - */
