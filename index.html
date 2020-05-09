@@ -22,12 +22,17 @@ CSS testing
     </head>
     <body>
         
+        <!-- Nav Bar -->
         <nav class="nav">
             <div class="nav-container">
                 <a class="logo" href="./"><img src="./logo.png" alt="STiBaRC Logo"></a>
                 <span class="flex-grow"></span>
-                <span class="nav-items">
-                    <input class="input primaryAlt" placeholder="Search"> <button class="button primaryAlt">Log In</button> <button class="button">Sign Up</button>
+                <span id="loggedout">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search">
+                        <button class="button primaryAlt">Log In</button> 
+                        <button class="button">Sign Up</button>
+                    </span>
                 </span>
             </div>
         </nav>
@@ -36,15 +41,49 @@ CSS testing
             
             <br>
             
-            <div style="display: flex;align-items: center"><h1 style="display:inline-block;margin: auto 1rem auto 0;vertical-align: middle;flex-grow: 1;" class="primary-text">Recent Posts</h1>
-                <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a><a class="button alt" href="#">Followed Feed</a>
-            </div>
+            <span id="loggedout">
+                <!-- Hero Header -->
+                <div class="hero large primary center" style="margin-bottom: 1.75rem;">
+                    <h1>Welcome to STiBaRC</h1>
+                    <button class="button">Sign Up</button>
+                    <button class="button primaryAlt">About Us</button> 
+                </div>
+                
+                <!-- Recent Posts View -->
+                <a href="./css.html">CSS Framework</a>
+                
+                <br>
+                
+                <h1>Recent Posts</h1>
+                
+                <!-- Large Card (Full Post) -->
+                <div class="card large"> 
+                    <span class="content">
+                        <div>
+                            <h6 style="float: right; padding-right: 50%"> <i>4 Hours Ago</i></h6>
+                            <h2 style="line-height: 0rem;">Post Title</h2>
+                            <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                            <p style="text-align: justify; max-width: 75%; max-height: 75px; overflow: hidden; text-overflow: ellipsis;">
+                                Here is a paragraph. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+                            </p>
+                        </div>
+                    </span>
+                    <span class="embed">
+                        <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="150px" style="max-width: 800px">
+                    </span>
+                </div>
+            </span>
+            
+            <span id="loggedin" style="display: none"> <!-- TEMPORARY STYLE ATTRIBUTE -->
+                <!-- View Activities Header -->
+                <div style="display: flex;align-items: center"><h1 style="display:inline-block;margin: auto 1rem auto 0;vertical-align: middle;flex-grow: 1;" class="primary-text">Recent Posts</h1>
+                    <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a><a class="button alt" href="#">Followed Feed</a>
+                </div>
+            </span>
             
             <br>
             
-            <p>Here is a paragraph. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail.</p>
-            
-            <a href="./css.html">CSS Framework</a>
+
             
         </main>
         
