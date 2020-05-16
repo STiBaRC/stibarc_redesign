@@ -38,72 +38,83 @@ CSS testing
         </nav>
         
         <main class="container nav-margin margin-bottom">
-            
-            <br>
-            
-            <span id="loggedout">
-                <!-- Hero Header -->
-                <div class="hero large primary center" style="margin-bottom: 1.75rem;">
-                    <h1>Welcome to STiBaRC</h1>
-                    <div class="m-bottom">
-                        <button class="button m-right">Sign Up</button>
-                        <button class="button primaryAlt">About Us</button>
-                    </div>
-                </div>
-                
-                <!-- Recent Posts View -->
-                <a href="./css.html">CSS Framework</a>
-                
-                <br>
-                
-                <h1>Recent Posts</h1>
-                
-                <!-- Large Card (Full Post) -->
-                <div class="card large"> 
-                    <span class="content">
-                        <div class="profile-info">
-                            <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
-                            <div class="profile-name" style="flex-grow: 1;">
-                                <h2 style="line-height: 0rem;">Post Title</h2>
-                                <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
-                            </div>
-                            <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
-                        </div>
-                        <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
-                            Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
-                        </p>
-                    </span>
-                    <span class="embed">
-                        <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
-                    </span>
-                </div>
-                
-                <!-- Large Small (Small Post) -->
-                <div class="card small"> 
-                    <span class="content">
-                        <div class="profile-info">
-                            <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
-                            <div class="profile-name" style="flex-grow: 1;">
-                                <h2 style="line-height: 0rem;">Post Author</h2>
-                                <h7 style="line-height: 0rem;"><i>4 Hours Ago</i></h7>
-                            </div>
 
+            <div class="row">
+
+                <div class="col s12">
+                    <br>
+                    
+                    <span id="loggedout">
+                        <!-- Hero Header -->
+                        <div class="hero large primary center" style="margin-bottom: 1.75rem;">
+                            <h1>Welcome to STiBaRC</h1>
+                            <div class="m-bottom">
+                                <button class="button m-right">Sign Up</button>
+                                <button class="button primaryAlt">About Us</button>
+                            </div>
                         </div>
-                        <p style="text-align: justify; max-height: 75px; overflow: hidden;">
-                            Here is a paragraph. This paragraph would be the entirety of this post, which is the smaller post size that will be available at the top of the homepage for signed-in users. 
-                        </p>
+                        
+                        <!-- Recent Posts View -->
+                        <a href="./css.html">CSS Framework</a>
+                        
+                        <br>
+                </div>
+                <div class="col s12 m10 l9">
+
+                    <h1>Recent Posts</h1>
+                        
+                    <!-- Large Card (Full Post) -->
+                    <div class="card large"> 
+                        <span class="content">
+                            <div class="profile-info">
+                                <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                                <div class="profile-name" style="flex-grow: 1;">
+                                    <h2 style="line-height: 0rem;">Post Title</h2>
+                                    <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                                </div>
+                                <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
+                            </div>
+                            <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
+                                Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                            </p>
+                        </span>
+                        <span class="embed">
+                            <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                        </span>
+                    </div>
+                        
+                    <!-- Large Small (Small Post) -->
+                    <div class="card small"> 
+                        <span class="content">
+                            <div class="profile-info">
+                                <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                                <div class="profile-name" style="flex-grow: 1;">
+                                    <h2 style="line-height: 0rem;">Post Author</h2>
+                                    <h7 style="line-height: 0rem;"><i>4 Hours Ago</i></h7>
+                                </div>
+
+                            </div>
+                            <p style="text-align: justify; max-height: 75px; overflow: hidden;">
+                                Here is a paragraph. This paragraph would be the entirety of this post, which is the smaller post size that will be available at the top of the homepage for signed-in users. 
+                            </p>
+                        </span>
+                    </div>
+                    
+                    <span id="loggedin" style="display: none"> <!-- TEMPORARY STYLE ATTRIBUTE -->
+                        <!-- View Activities Header -->
+                        <div style="display: flex;align-items: center"><h1 style="display:inline-block;margin: auto 1rem auto 0;vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
+                            <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a><a class="button alt" href="#">Followed Feed</a>
+                        </div>
                     </span>
+                    
+                    <br>
                 </div>
-            </span>
-            
-            <span id="loggedin" style="display: none"> <!-- TEMPORARY STYLE ATTRIBUTE -->
-                <!-- View Activities Header -->
-                <div style="display: flex;align-items: center"><h1 style="display:inline-block;margin: auto 1rem auto 0;vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
-                    <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a><a class="button alt" href="#">Followed Feed</a>
+                <div class="col s12 m2 l3">
+                    <p>Bruh moment</p>
                 </div>
-            </span>
-            
-            <br>           
+
+            </div><!-- /row -->
+
         </main>
         
         <footer>
