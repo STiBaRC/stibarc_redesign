@@ -61,17 +61,37 @@ CSS testing
                 <!-- Large Card (Full Post) -->
                 <div class="card large"> 
                     <span class="content">
-                        <div>
-                            <h6 style="float: right; padding-right: 50%"> <i>4 Hours Ago</i></h6>
-                            <h2 style="line-height: 0rem;">Post Title</h2>
-                            <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
-                            <p style="text-align: justify; max-width: 75%; max-height: 75px; overflow: hidden; text-overflow: ellipsis;">
-                                Here is a paragraph. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
-                            </p>
+                        <div class="profile-info">
+                            <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                            <div class="profile-name" style="flex-grow: 1;">
+                                <h2 style="line-height: 0rem;">Post Title</h2>
+                                <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                            </div>
+                            <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
                         </div>
+                        <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
+                            Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                        </p>
                     </span>
                     <span class="embed">
-                        <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="150px" style="max-width: 800px">
+                        <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                    </span>
+                </div>
+                
+                <!-- Large Small (Small Post) -->
+                <div class="card small"> 
+                    <span class="content">
+                        <div class="profile-info">
+                            <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                            <div class="profile-name" style="flex-grow: 1;">
+                                <h2 style="line-height: 0rem;">Post Author</h2>
+                                <h7 style="line-height: 0rem;"><i>4 Hours Ago</i></h7>
+                            </div>
+
+                        </div>
+                        <p style="text-align: justify; max-height: 75px; overflow: hidden;">
+                            Here is a paragraph. This paragraph would be the entirety of this post, which is the smaller post size that will be available at the top of the homepage for signed-in users. 
+                        </p>
                     </span>
                 </div>
             </span>
@@ -83,11 +103,12 @@ CSS testing
                 </div>
             </span>
             
-            <br>
-            
-
-            
+            <br>           
         </main>
+        
+        <footer>
+            <a href="css.html"><i> © 2020 Stibarc Team</i></a>
+        </footer>
         
     </body>
 </html>
