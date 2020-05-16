@@ -216,6 +216,26 @@ h1, h2, h3 {
     max-width: 800px;
 }
 
+
+/* Ad Spaces */
+.column-ad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fill);
+    border: 1px solid var(--outline);
+    border-radius: 8px;
+    color: var(--text);
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 /* form stuff */
 /* inputs */
 .input {
