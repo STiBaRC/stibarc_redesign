@@ -12,9 +12,13 @@ CSS testing
         
         <!-- CSS -->
         <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/page-specific/homepage.css">
         <link rel="stylesheet" href="./css/themes/default.css">
         
         <link rel="stylesheet" href="./css/stibarc-css.css">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <style>
             
@@ -27,11 +31,21 @@ CSS testing
             <div class="nav-container">
                 <a class="logo" href="./"><img src="./logo.png" alt="STiBaRC Logo"></a>
                 <span class="flex-grow"></span>
+                
+                <!-- Logged Out Buttons -->
                 <span id="loggedout">
                     <span class="nav-items">
                         <input class="input primaryAlt" placeholder="Search">
                         <button class="button m-left m-right primaryAlt">Log In</button> 
                         <button class="button">Sign Up</button>
+                    </span>
+                </span>
+                
+                <!-- Logged In Buttons -->
+                <span id="loggedin">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search"> 
+                        <button class="button" style="margin-left: 2rem"><i class="material-icons" style="vertical-align: middle; line-height: 5px;">keyboard_arrow_down</i></button>
                     </span>
                 </span>
             </div>
@@ -53,21 +67,51 @@ CSS testing
                                 <button class="button primaryAlt">About Us</button>
                             </div>
                         </div>
-                    </span>
-                        <!-- Recent Posts View -->
-                        <a href="./css.html">CSS Framework</a>
-                        
-                        <br>
+                    </span>                    
                 </div>
+                
                 <div class="col s12 m9">
-
-                    <h1>Recent Posts</h1>
+                    
+                    <span id="loggedin">
+                        <!-- Quick Post -->
+                        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                            <h2 style="margin-bottom: 1rem">Quick Post</h2>
+                            <a class="button primary" style="margin-left: 1rem;" href="#">
+                                <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">open_in_new</i>
+                                Full Post
+                            </a>
+                        </div>
                         
+                        <div class="card quick-post">
+                            <textarea name="Quick Post Content">Make a Quick Post...</textarea>
+                            <div style="flex-direction: column;">
+                                <a class="button icon alt" style="margin-left: 1rem; margin-bottom: 1rem;" href="#">
+                                    <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">clear</i>
+                                </a>
+                                
+                                <a class="button icon primary" style="margin-left: 1rem;" href="#">
+                                    <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">send</i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- View Posts Header -->
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem">
+                            <h1 style="display:inline-block; margin: auto 1rem auto 0; vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
+                            <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a>
+                            <a class="button alt" href="#">Followed Feed</a>
+                        </div>
+                    </span>
+                    
+                    <span id="loggedout"> 
+                        <h1 style="margin-bottom: 1rem;">Recent Posts</h1>
+                    </span>
+                    
                     <!-- Large Card (Full Post) -->
                     <div class="card large"> 
                         <span class="content">
                             <div class="profile-info">
-                                <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                                <img src="./Design_files/newjimbo.png" alt="Profile picture" height="50px">
                                 <div class="profile-name" style="flex-grow: 1;">
                                     <h2 style="line-height: 0rem;">Post Title</h2>
                                     <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
@@ -87,7 +131,7 @@ CSS testing
                     <div class="card small"> 
                         <span class="content">
                             <div class="profile-info">
-                                <img src="./Design_files/newjimbo.png" alt="Embed placeholder" height="50px">
+                                <img src="./Design_files/newjimbo.png" alt="Profile picture" height="50px">
                                 <div class="profile-name" style="flex-grow: 1;">
                                     <h2 style="line-height: 0rem;">Post Author</h2>
                                     <h7 style="line-height: 0rem;"><i>4 Hours Ago</i></h7>
@@ -100,21 +144,44 @@ CSS testing
                         </span>
                     </div>
                     
-                    <span id="loggedin" style="display: none"> <!-- TEMPORARY STYLE ATTRIBUTE -->
-                        <!-- View Activities Header -->
-                        <div style="display: flex;align-items: center"><h1 style="display:inline-block;margin: auto 1rem auto 0;vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
-                            <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a><a class="button alt" href="#">Followed Feed</a>
-                        </div>
-                    </span>
-                    
                     <br>
                 </div>
                 <div class="col s12 m3">
-                    <p style="text-align: right;">
-                        STiBaRC is the best place to share content - show others photos, videos, music and more, or just ask questions and share opinions!
-                    </p>
+                    <span id="loggedout">
+                        <!-- Intro Paragraph -->
+                        <p style="text-align: right;">
+                            STiBaRC is the best place to share content - show others photos, videos, music and more, or just ask questions and share opinions!
+                        </p>
+                    </span>
                     
-                    <div class="column-ad">
+                    <span id="loggedin">
+                        <!-- Recent Activity -->
+                        <h2 style="text-align: right">Recent Activity</h2>
+                        <div class="card recent-activity">
+                            <!-- Activity Template -->
+                            <div class="activity">
+                                <img src="./Design_files/newjimbo.png" alt="Profile Picture" height="35px" style="border-radius: 50%;">
+                                
+                                <div style="flex-direction: column; flex-grow: 1; margin-left: 1rem;">
+                                    <p><b>[username]</b> liked <b>[post]</b></p>
+                                    <h6 style="line-height: 0px"><i>4 Hours Ago</i></h6>
+                                </div>
+                            </div>
+                            
+                            <!-- Activity Template -->
+                            <div class="activity">
+                                <img src="./Design_files/newjimbo.png" alt="Profile Picture" height="35px" style="border-radius: 50%;">
+                                
+                                <div style="flex-direction: column; flex-grow: 1; margin-left: 1rem;">
+                                    <p><b>[username]</b> liked <b>[post]</b></p>
+                                    <h6 style="line-height: 0px"><i>4 Hours Ago</i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    
+                    <!-- Ad -->
+                    <div class="card column-ad">
                         [Insert Ad Here]
                     </div>
                     
@@ -126,6 +193,8 @@ CSS testing
         
         <footer>
             <a href="css.html"><i> © 2020 Stibarc Team</i></a>
+            |
+            <a href="./css.html">CSS Framework</a>
         </footer>
         
     </body>

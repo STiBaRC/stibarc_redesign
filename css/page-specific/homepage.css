@@ -1,0 +1,17 @@
+/* Recent Activity */
+.recent-activity {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 0px;
+}
+
+.activity {
+    border-bottom: 1px solid var(--outline);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
