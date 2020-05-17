@@ -1,0 +1,53 @@
+.nav {
+    box-shadow: none;
+}
+
+.main {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0px 5px 20px rgba(40, 40, 40, .3);
+    padding: 75px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Elements */
+h1, h2 {
+    text-align: center;
+    color: var(--white);
+}
+
+h3 {
+    color: var(--white);
+}
+
+/* Inputs */
+.login-input {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.lws {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.button.long {
+    width: 18rem;
+}
+
+.button.footer {
+    margin: 5px;
+}
