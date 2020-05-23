@@ -20,7 +20,7 @@
 }
 
 /* Elements */
-h1, h2 {
+h1, h2, h6 {
     text-align: center;
     color: var(--white);
 }
@@ -30,11 +30,23 @@ h3 {
 }
 
 /* Inputs */
-.login-input {
-    display: flex; 
+.input-item {
+    display: flex;
+    width: 100%;
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
+}
+
+.input-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.input-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .lws {
@@ -45,7 +57,7 @@ h3 {
 }
 
 .button.long {
-    width: 18rem;
+    width: 25rem;
 }
 
 .button.footer {
