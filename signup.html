@@ -37,57 +37,125 @@
         </nav>
         
         <main class="main">
-            <br>
-            <br>
             
-            <h1>Sign Up</h1>
-            
-            <!-- Input Items -->
-            <div class="input-item">
-                <div class="input-left">
-                    <h3 style="margin-right: 2rem;">Username</h3>
+            <div class="login-container preconfirmation" style="display: none;">
+                
+                <h1>Sign Up</h1>
+
+                <!-- Input Items -->
+                <div class="input-item">
+                    <div class="input-left">
+                        <h3 style="margin-right: 2rem;">Username</h3>
+                    </div>
+                    <div class="input-right">
+                        <input class="input alt" type="text" placeholder="Username">
+                    </div>
                 </div>
-                <div class="input-right">
-                    <input class="input alt" type="text" placeholder="Username">
+                <h6 style="margin: 0px;">1-30 characters, no spaces</h6>
+
+                <br>
+
+                <div class="input-item">
+                    <div class="input-left">
+                        <h3 style="margin-right: 2rem;">Email Address</h3>
+                    </div>
+                    <div class="input-right">
+                        <input class="input alt" type="email" placeholder="name@provider.com">
+                    </div>
                 </div>
+                
+                <div class="input-item">
+                    <div class="input-left">
+                        <h3 style="margin-right: 2rem;">Your Birthday</h3>
+                    </div>
+                    <div class="input-right">
+                        <input class="input alt" type="date">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="input-item">
+                    <div class="input-left">
+                        <h3 style="margin-right: 2rem;">Password</h3>
+                    </div>
+                    <div class="input-right">
+                        <input class="input alt" type="password" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="input-item">
+                    <div class="input-left">
+                        <h3 style="margin-right: 2rem; font-size: 0.75rem">Repeat Password</h3>
+                    </div>
+                    <div class="input-right">
+                        <input class="input alt" type="password" placeholder="Password">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="input-item">
+                    <button class="button long">Sign Up</button>
+                </div>
+
+                <!-- Errors -->
+                <div class="error error-match" style="display: none;">Passwords must match!</div>
+                <div class="error error-blank" style="display: none;">Fields cannot be blank!</div>
+                <div class="error error-blank" style="display: none;">Error Registering!</div>
+                
             </div>
-            <h6 style="margin: 0px;">1-30 characters, no spaces</h6>
             
-            <br>
-            
-            <div class="input-item">
-                <div class="input-left">
-                    <h3 style="margin-right: 2rem;">Email Address</h3>
+            <div class="login-container confirmation" style="display: none;">
+                
+                <h1>Sign Up</h1>
+                
+                <br>
+                
+                <!-- Loader -->
+                <div id="load" style="display: block;">
+                    <center><div class="loader"></div></center>
                 </div>
-                <div class="input-right">
-                    <input class="input alt" type="email" placeholder="name@provider.com">
-                </div>
+                
+                <br>
+                
+                <p style="text-align: center;">Verifying your email address...</p>
+                
             </div>
             
-            <br>
-            
-            <div class="input-item">
-                <div class="input-left">
-                    <h3 style="margin-right: 2rem;">Password</h3>
+            <div class="login-container postconfirmation" style="display: ;">
+                
+                <h1>Configure Your Profile</h1>
+                
+                <!-- Profile Editor -->
+                <div class="profile-container">
+                    <img src="design_files/uploadbanner.png" alt="Upload a Banner" class="profile-banner">
+                    
+                    <div class="profile-information">
+                        <img src="design_files/newjimbo.png" alt="Upload a Profile Picture" class="profile-avatar">
+                        
+                        <div class="profile-stack">
+                            <h4 style="margin: 4px; font-size: 1.4rem">Username Here</h4>
+                            <h5 style="font-size: 0.7rem; margin: 4px;">Real Name Here</h5>
+                            <p style="font-size: 0.7rem; margin: 4px;"><i>yourname@provider.com</i></p>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
-                <div class="input-right">
-                    <input class="input alt" type="password" placeholder="Password">
+                
+                <br>
+                
+                <h1>Options</h1>
+                
+                <!-- Profile Options -->
+                
+                <br>
+                
+                <div class="input-item">
+                    <button class="button long">Done</button>
                 </div>
-            </div>
-            
-            <div class="input-item">
-                <div class="input-left">
-                    <h3 style="margin-right: 2rem; font-size: 0.75rem">Repeat Password</h3>
-                </div>
-                <div class="input-right">
-                    <input class="input alt" type="password" placeholder="Password">
-                </div>
-            </div>
-            
-            <br>
-            
-            <div class="input-item">
-                <button class="button long">Sign Up</button>
+                
             </div>
         </main>
         
