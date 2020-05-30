@@ -34,16 +34,15 @@ h4 {
 
 .postconfirmation {
     padding-bottom: 2rem;
+    height: auto;
 }
 
-.footer-container {
-    width: 100%;
-    height: 150px;
-    
+.preconfirmation, .confirmation, .postconfirmation {
+    display: none;
+}
+
+.preconfirmation.visible, .confirmation.visible, .postconfirmation.visible {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Profile Editor */
@@ -90,6 +89,14 @@ h4 {
     
     margin-left: 2rem;
     margin-top: 0.5rem;
+}
+
+.real-name, .email, .birthday {
+    display: none;
+}
+
+.real-name.visible, .email.visible, .birthday.visible {
+    display: block;
 }
 
 /* Inputs */

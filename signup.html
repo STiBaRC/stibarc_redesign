@@ -18,6 +18,9 @@
         
         <!-- Google Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/signup.js"></script>
     
     </head>
     
@@ -38,7 +41,7 @@
         
         <main class="main">
             
-            <div class="login-container preconfirmation" style="display: none;">
+            <div id="signUpDiv" class="login-container preconfirmation visible">
                 
                 <h1>Sign Up</h1>
 
@@ -96,17 +99,18 @@
                 <br>
 
                 <div class="input-item">
-                    <button class="button long">Sign Up</button>
+                    <button class="button long" onclick="SignUp()">Sign Up</button>
                 </div>
 
                 <!-- Errors -->
-                <div class="error error-match" style="display: none;">Passwords must match!</div>
-                <div class="error error-blank" style="display: none;">Fields cannot be blank!</div>
-                <div class="error error-blank" style="display: none;">Error Registering!</div>
+                <div class="error error-match" style="display: none;">Passwords must match.</div>
+                <div class="error error-blank" style="display: none;">You must fill in all fields.</div>
+                <div class="error error-underage" style="display: none;">You must be above the age of 13 to sign up.</div>
+                <div class="error error-register-fail" style="display: none;">Registration failed.</div>
                 
             </div>
             
-            <div class="login-container confirmation" style="display: none;">
+            <div id="confirmDiv" class="login-container confirmation">
                 
                 <h1>Sign Up</h1>
                 
@@ -121,9 +125,20 @@
                 
                 <p style="text-align: center;">Verifying your email address...</p>
                 
+                <br>
+                
+                <div class="input-item">
+                    <button class="button long" onclick="EmailConfirmed()">[Debug] Next</button>
+                </div>
+                
+                <br>
+                
+                <!-- Errors -->
+                <div class="error error-unable-confirm" style="display: none;">Unable to confirm email. Please try again.</div>
+                
             </div>
             
-            <div class="login-container postconfirmation" style="display: ;">
+            <div id="configureDiv" class="login-container postconfirmation">
                 
                 <h1>Configure Your Profile</h1>
                 
@@ -136,8 +151,9 @@
                         
                         <div class="profile-stack">
                             <h4 style="margin: 4px; font-size: 1.4rem">Username Here</h4>
-                            <h5 style="font-size: 0.7rem; margin: 4px;">Real Name Here</h5>
-                            <p style="font-size: 0.7rem; margin: 4px;"><i>yourname@provider.com</i></p>
+                            <h5 id="real-name" class="real-name visible" style="font-size: 0.7rem; margin: 4px;">Real Name Here</h5>
+                            <p id="email" class="email visible" style="font-size: 0.7rem; margin: 4px;"><i>yourname@provider.com</i></p>
+                            <p id="birthday" class="birthday" style="font-size: 0.7rem; margin: 4px;"><i>xx.xx.xxx</i></p>
                         </div>
                         
                         
@@ -149,12 +165,41 @@
                 <h1>Options</h1>
                 
                 <!-- Profile Options -->
+                <div style="display: flex; flex-direction: row; width: 27.5rem; justify-content: space-between;">                    
+                    <label class="label">Show Email
+                        <input type="checkbox" checked="checked" onclick="ToggleEmail()">
+                        <span class="checkmark">
+                            <span class="material-icons">check</span>
+                        </span>
+                    </label>    
+
+                    <label class="label">Show Real Name
+                        <input type="checkbox" checked="checked" onclick="ToggleRealName()">
+                        <span class="checkmark">
+                            <span class="material-icons">check</span>
+                        </span>
+                    </label> 
+                    
+                    <label class="label">Show Birthday
+                        <input type="checkbox" onclick="ToggleBirthday()">
+                        <span class="checkmark">
+                            <span class="material-icons">check</span>
+                        </span>
+                    </label> 
+                </div>
                 
                 <br>
                 
                 <div class="input-item">
-                    <button class="button long">Done</button>
+                    <a class="button long" href="index.html">Done</a>
                 </div>
+                
+                <br>
+                
+                <!-- Errors -->
+                <div class="error error-avatar-big" style="display: none;">Your avatar or banner is too big. Try uploading something under 5MB.</div>
+                <div class="error error-avatar-small" style="display: none;">Your avatar or banner is too small. Try uploading an image of acceptable dimensions.</div>
+                <div class="error error-profile-save-fail" style="display: none;">Failed to save profile information.</div>
                 
             </div>
         </main>
