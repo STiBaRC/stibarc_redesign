@@ -89,7 +89,7 @@
     .hero.primary a:not(.button){
         color: var(--white);
     }
-    .hero.primary a:hover{
+    .hero.primary a:not(.button):hover{
         text-decoration: underline;
     }
     .hero p{
