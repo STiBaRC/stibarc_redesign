@@ -1,0 +1,177 @@
+<!-- HOMEPAGE -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>Post Name |  STiBaRC</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/page-specific/post.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+        
+        <link rel="stylesheet" href="./css/stibarc-css.css">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/post.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <span class="flex-grow"></span>
+                
+                <!-- Logged Out Buttons -->
+                <span id="loggedout">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search">
+                        <a href="login.html" class="button m-left m-right primaryAlt">Log In</a> 
+                        <a href="signup.html" class="button">Sign Up</a>
+                    </span>
+                </span>
+                
+                <!-- Logged In Buttons -->
+                <span id="loggedin">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search"> 
+                        <button class="button" style="margin-left: 2rem"><i class="material-icons" style="vertical-align: middle; line-height: 5px;">keyboard_arrow_down</i></button>
+                    </span>
+                </span>
+            </div>
+        </nav>
+        
+        <main class="container nav-margin margin-bottom">
+
+            <div class="row">
+
+                <!-- Post Header -->
+                <div class="col s12">
+                    <div class="title-header">
+                        <div class="title-info">
+                            <h1 style="margin-bottom: 0.5rem;">Post Title</h1>
+                            <h5 style="margin-top: 0px;"><a>Post Author</a> | 5h</h5>
+                        </div>
+                        
+                        <div class="post-stats">
+                            <div class="stat-container pos">
+                                <span class="material-icons" style="margin-right: 1rem;">thumb_up</span>
+                                <h5 style="margin: 0px;">15k</h5>
+                            </div>
+                            
+                            <div class="stat-container neg">
+                                <span class="material-icons" style="margin-right: 1rem;">thumb_down</span>
+                                <h5 style="margin: 0px;">144</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col s12 m9">
+                    
+                    <!-- Post Content -->
+                    <div class="card post">
+                        <p>
+                            This is post content.
+                            <br>
+                            <br>
+                            Fusce ac est vitae purus varius tristique. Phasellus mattis ornare ligula. Donec id nibh. Vestibulum metus quam, ultrices in, sagittis tincidunt, gravida et, sapien. Sed bibendum, lectus vitae tincidunt dapibus, sem felis posuere est, id ornare augue lorem in purus. Suspendisse ligula. Sed mollis tristique mauris. Nullam nunc nunc, aliquet et, tristique nec, porttitor quis, urna. Etiam eu erat. Morbi ut nisl. Curabitur semper sem. Nulla turpis nibh, tempor nec, aliquet vitae, elementum ac, mauris.
+                            <br>
+                            <br>
+                            Quisque pellentesque metus ac quam. Donec magna nulla, aliquet vitae, congue ac, faucibus ut, erat. Donec sit amet neque. Donec posuere tempus massa. Duis vulputate mauris sit amet purus. Duis vestibulum. Fusce ac erat. Curabitur sagittis. Pellentesque ultricies, ante id lobortis feugiat, ipsum magna congue risus, pulvinar euismod arcu nunc ac turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vel quam ut tellus gravida faucibus. Vivamus justo est, elementum vitae, malesuada eu, fermentum in, sapien. Donec sit amet justo. In velit. Vivamus turpis pede, dignissim sed, scelerisque nec, pretium sit amet, dui. Nam nec felis non turpis hendrerit varius. In ultrices ornare lorem. 
+                        </p>
+                        
+                        <div class="post-embeds">
+                            <img src="./sample_assets/placeholderimage.png" alt="placeholder image">
+                            <img src="./sample_assets/placeholderimage.png" alt="placeholder image">
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Comments -->
+                    <div class="comments">
+                        <h2>Comments</h2>
+                        
+                        <!-- Make Comment -->
+                        <div class="card quick-post">
+                            <textarea name="Comment Content" placeholder="Make a Comment..."></textarea>
+                            <div style="flex-direction: column;">            
+                                <a class="button icon primary" style="margin-left: 1rem;" href="#">
+                                    <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">send</i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- Comment Card -->
+                        <div class="card comment">
+                            <div class="left">
+                                <div class="comment-profile">
+                                    <img src="design_files/newjimbo.png">
+                                    <h5><a>Commenter Username</a> | 2h</h5>
+                                </div>
+
+                                <div class="comment-content">
+                                    <p>This is comment content.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="right">
+                                <!-- Drop Down Button -->
+                                <button class="button alt icon-small" onclick="CommentDropdown()">
+                                    <span class="material-icons">more_vert</span>
+                                </button>
+                                
+                                <!-- Drop Down Content -->
+                                <div id="commentDropdown" class="card commentDropdown">
+                                    <a href="#">
+                                        <span class="material-icons" style="font-size: 18px; margin-right: 1rem;">reply</span>
+                                        Reply
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons" style="font-size: 18px; margin-right: 1rem;">report</span>
+                                        Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Side Bar -->
+                <div class="col s12 m3">    
+                    <!-- Ad -->
+                    <div class="card column-ad">
+                        [Insert Ad Here]
+                    </div>
+                    
+                    <!-- Ad -->
+                    <div class="card column-ad">
+                        [Insert Ad Here]
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        
+    </body>
+</html>

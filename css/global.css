@@ -81,7 +81,7 @@
         color: var(--temp);
     }
     .hero.primary h1, .hero.primary h2{
-        color: var(--white);
+        color: var(--textAlt);
     }
     .hero.large h1{
         font-size: 2.75rem;
@@ -333,7 +333,7 @@
     }
 
     /* Buttons */
-    .button{
+    .button {
         display: inline-block;
         margin: 0;
         text-decoration: none;
@@ -350,15 +350,15 @@
         border: 1px solid var(--white);
         color: var(--primary);
     }
-    .button:hover{
+    .button:hover {
         text-decoration: none;
         color: var(--primaryLight);
     }
-    .button:active{
+    .button:active {
         text-decoration: none;
         color: var(--primaryDark);
     }
-    .button:focus{
+    .button:focus {
         text-decoration: none;
     }
 
@@ -367,42 +367,52 @@
         padding: 10px 11px;
     }
 
-    .button.primary{
+    .icon-small {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 0px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .button.primary {
         background-color: var(--primary);
-        color: var(--white);
+        color: var(--textAlt);
         border: 1px solid var(--primary);
     }
-    .button.primary:hover{
+    .button.primary:hover {
         background-color: var(--primaryLightAlt);
         border-color: var(--primaryLightAlt);
     }
-    .button.primary:active{
+    .button.primary:active {
         background-color: var(--primaryDark);
         border-color: var(--primaryDark)
     }
 
-    .button.primaryAlt{
+    .button.primaryAlt {
         background-color: var(--alpha);
         color: var(--white);
         border-color: var(--white);
     }
-    .button.primaryAlt:hover{
+    .button.primaryAlt:hover {
         background-color: var(--alphaHover);
     }
-    .button.primaryAlt:active{
+    .button.primaryAlt:active {
         background-color: var(--alphaDark);
     }
 
-    .button.alt{
+    .button.alt {
         background-color: var(--fill);
         color: var(--text);
         border: 1px solid var(--outline);
     }
-    .button.alt:hover{
+    .button.alt:hover {
         background-color: var(--white);
         color: var(--text);
     }
-    .button.alt:active{
+    .button.alt:active {
         background-color: var(--temp);
         color: var(--text);
     }
@@ -512,6 +522,22 @@
     .m-left {
         margin-left: .75rem;
     }
+
+/* - Media Queries - */
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3 {
+        color: var(--textAlt);
+    }   
+    
+    .button {
+        background-color: var(--textAlt);
+    }
+    
+    .button.primaryAlt {
+        color: var(--textAlt);
+        outline-color: var(--textAlt);
+    }
+}
 
 
 /* - Colors - */

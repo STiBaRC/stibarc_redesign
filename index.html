@@ -75,7 +75,7 @@
                     <span id="loggedin">
                         <!-- Quick Post -->
                         <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-                            <h2 style="margin-bottom: 1rem">Quick Post</h2>
+                            <h2 style="margin-bottom: 1rem">Have Something to Say?</h2>
                             <a class="button primary" style="margin-left: 1rem;" href="#">
                                 <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">open_in_new</i>
                                 Full Post
@@ -83,12 +83,8 @@
                         </div>
                         
                         <div class="card quick-post">
-                            <textarea name="Quick Post Content">Make a Quick Post...</textarea>
-                            <div style="flex-direction: column;">
-                                <a class="button icon alt" style="margin-left: 1rem; margin-bottom: 1rem;" href="#">
-                                    <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">clear</i>
-                                </a>
-                                
+                            <textarea name="Quick Post Content" placeholder="Make a Post..."></textarea>
+                            <div style="flex-direction: column;">                          
                                 <a class="button icon primary" style="margin-left: 1rem;" href="#">
                                     <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">send</i>
                                 </a>
@@ -97,7 +93,7 @@
                         
                         <!-- View Posts Header -->
                         <div style="display: flex; align-items: center; margin-bottom: 1rem">
-                            <h1 style="display:inline-block; margin: auto 1rem auto 0; vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
+                            <h1 style="margin-right: 1rem; vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
                             <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a>
                             <a class="button alt" href="#">Followed Feed</a>
                         </div>
@@ -192,9 +188,15 @@
         </main>
         
         <footer>
-            <a href="css.html"><i> © 2020 Stibarc Team</i></a>
-            |
-            <a href="./css.html">CSS Framework</a>
+            <div class="footer-container">
+                <a href="css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
+                <div style="flex-direction: row; margin: 10px;">
+                    <a href="./index.html" class="button footer primary">Home</a>
+                    <a href="./aboutus.html" class="button footer alt">About Us</a>
+                    <a href="./legal/tos.html" class="button footer alt">Terms of Service</a>
+                    <a href="legal/privacy.html" class="button footer alt">Privacy</a>
+                </div>
+            </div>
         </footer>
         
     </body>

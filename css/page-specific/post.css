@@ -1,0 +1,164 @@
+/* General Elements */
+.card-post > a {
+    font-style: italic;
+}
+
+/* Post Elements */
+.title-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-info {
+    display: block;
+    flex-direction: column;
+    padding-right: 5rem;
+}
+
+.post-stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    background-color: var(--temp);
+    border-radius: 1.2rem;
+    color: var(--text);
+    
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+}
+
+.stat-container.pos {
+    color: var(--primary);
+}
+
+.stat-container.neg {
+    color: var(--primaryNegative);
+}
+
+
+/* Post Content */
+.card.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.card.post > p {
+    width: 100%;
+    
+    text-align: justify;
+}
+
+.post-embeds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-embeds > img {
+    max-width: 49%;
+    height: auto;
+    max-height: 300px;
+}
+
+
+/* Comments */
+textarea {
+        min-height: 50px;
+        max-height: 100px;
+}
+
+.comments {
+    margin-top: 2rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.comment > .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding-bottom: 1rem;
+}
+
+.comment > .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-profile > img {
+    max-height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 100%;
+}
+
+.comment-content > p {
+    margin: 0px 2rem;
+}
+
+.comment-content > a {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 150px;
+}
+
+/* Comment Dropdown */
+.commentDropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    padding: 10px;
+    
+    transform: translate(50px, -20px);
+    
+    box-shadow: 0px 5px 20px rgba(40, 40, 40, .3);
+    z-index: 1;
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.commentDropdown > a {
+    margin: 0.5rem;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
