@@ -43,6 +43,7 @@
     a {
         color: var(--primary);
         text-decoration: none;
+        cursor: pointer;
     }
     a:hover {
         color: var(--primaryLight);
