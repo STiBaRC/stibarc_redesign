@@ -86,7 +86,7 @@
     .hero.large h1{
         font-size: 2.75rem;
     }
-    .hero.primary a{
+    .hero.primary a:not(.button){
         color: var(--white);
     }
     .hero.primary a:hover{
