@@ -362,7 +362,7 @@
     .button:focus {
         text-decoration: none;
         outline: none;
-        border: 1px solid rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85);
     }
 
     .icon {        
@@ -460,6 +460,24 @@
     }
     .nav a:not(.button){
         color: var(--white);
+    }
+
+    .pfpButton {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        border: none;
+        margin: 0 1.5rem;
+        padding: 1.25rem;
+        background: #ccc
+            url("./design_files/newjimbo.png?raw=true");
+        background-size: cover;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    .pfpButton:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85);
     }
 
 /* Loader */
