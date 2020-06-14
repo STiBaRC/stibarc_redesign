@@ -361,6 +361,8 @@
     }
     .button:focus {
         text-decoration: none;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.85);
     }
 
     .icon {        
@@ -418,6 +420,9 @@
         color: var(--text);
     }
 
+    .button.dropdown {
+        padding: 8px 1.25rem;
+    }
 
 /* Nav */
     .nav-height {
