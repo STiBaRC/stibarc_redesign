@@ -462,15 +462,20 @@
         color: var(--white);
     }
 
+    .nav-items {
+        display: flex;
+        align-items: center;
+    }
+
     .pfpButton {
         display: inline-block;
         vertical-align: middle;
         padding: 0;
         border: none;
         margin: 0 1.5rem;
-        padding: 1.25rem;
+        padding: 1.225rem;
         background: #ccc
-            url("./design_files/newjimbo.png?raw=true");
+            url("../design_files/newjimbo.png?raw=true");
         background-size: cover;
         border-radius: 50%;
         box-sizing: border-box;
