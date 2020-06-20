@@ -1,0 +1,124 @@
+/* Header Elements */
+.banner-info {
+    display: flex; 
+    flex-direction: row;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    
+    width: 150px;
+    
+    transform: translate(0%, -50%)
+}
+
+.info {
+    display: flex;
+    height: 80px;
+    
+    overflow: scroll;
+    
+    padding: 1rem 2rem;
+}
+
+.info-name {
+    flex-direction: column;
+    
+    min-width: 25%;
+    max-width: 40%;
+}
+
+.info-name > * {
+    margin: 0px;
+    text-align: left;
+}
+
+.info-roles {
+    flex-direction: row;
+    
+    overflow: scroll;
+    max-width: 40%;
+}
+
+.info-subscribe {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+/* Roles */
+.role {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    padding: 8px 2rem;
+    margin: 5px;
+    
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: var(--outline);
+    color: var(--white);
+}
+
+.role.primary {
+    background-color: var(--primary);
+}
+
+.role.round {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 40px;
+    padding: 0px;
+}
+
+.role > .material-icons {
+    font-size: 20px;
+}
+
+
+
+/* Button Fixes */
+.info > .button {
+    height: 40px;
+    margin: 5px;
+}
+
+
+
+/* Subscribe */
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe > * {
+    margin: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe > .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats > .role {
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px;
+    width: 49%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

@@ -1,0 +1,13 @@
+/* Page Elements */
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 500px;
+}
+
+.message > * {
+    text-align: center;
+}

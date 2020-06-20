@@ -1,0 +1,161 @@
+<!-- PROFILE -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>User Name | STiBaRC</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/page-specific/profile.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+        
+        <link rel="stylesheet" href="./css/stibarc-css.css">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="./js/post.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <span class="flex-grow"></span>
+                
+                <!-- Logged Out Buttons -->
+                <span id="loggedout">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search">
+                        <a href="./login.html" class="button m-left m-right primaryAlt">Log In</a> 
+                        <a href="./signup.html" class="button">Sign Up</a>
+                    </span>
+                </span>
+                
+                <!-- Logged In Buttons -->
+                <span id="loggedin">
+			        <span class="nav-items">
+				        <input class="input primaryAlt" placeholder="Search">
+
+				        <img class="pfpButton" tabindex="0">
+				        <button class="button dropdown"><i class="material-icons" style="vertical-align: middle; line-height: 5px; font-size: 1.75rem;">keyboard_arrow_down</i></button>
+			        </span>
+		        </span>
+            </div>
+        </nav>
+        
+        <main class="container nav-margin margin-bottom">
+        
+            <div class="row">
+                <!-- Banner & Header -->
+                <div class="col s12">
+                    <img src="design_files/uploadbanner.png" alt="Banner" class="banner">
+                    
+                    <!-- Banner Information -->
+                    <div class="banner-info">
+                        <img src="design_files/newjimbo.png" alt="Profile Picture" class="profile-image">
+                        
+                        <div class="info info-name">
+                            <h1>Username</h1>
+                            <div style="display: flex; justify-content: space-between;">
+                                <h4 style="margin: 0px;">Real Name</h4>
+                                <p style="margin: 0px;"><i>name@provider.com</i></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info info-roles">
+                            <div class="role primary round">
+                                <span class="material-icons">verified_user</span></div>
+                            <div class="role">Developer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Posts -->
+                <div class="col s12 m9">
+                    <h2>Recent Posts</h2>
+                    
+                    <!-- Large Card -->
+                    <div class="card large"> 
+                        <span class="content">
+                            <div class="profile-info">
+                                <img src="./design_files/newjimbo.png" alt="Profile picture" height="50px">
+                                <div class="profile-name" style="flex-grow: 1;">
+                                    <h2 style="line-height: 0rem;">Post Title</h2>
+                                    <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                                </div>
+                                <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
+                            </div>
+                            <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
+                                Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                            </p>
+                        </span>
+                        <span class="embed">
+                            <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Side Bar -->
+                <div class="col s12 m3">  
+                    <!-- Subscribe Actions (Logged In) -->
+                    <div class="subscribe" id="loggedin">
+                        <button class="button primary">Follow</button>
+                        
+                        <div class="stats">
+                            <div class="role">13K Followers</div>
+                            <div class="role">505 Following</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Subscribe Actions (Logged Out) -->
+                    <div class="subscribe" id="loggedout">
+                        <a href="login.html" class="button alt">Log In to Follow</a>
+                        
+                        <div class="stats">
+                            <div class="role">13K Followers</div>
+                            <div class="role">505 Following</div>
+                        </div>
+                    </div>
+                    
+                    <!-- User Bio -->
+                    <p style="text-align: right;">
+                        This is a user's bio. Vestibulum vel metus. Donec sagittis velit vel augue. Fusce in nisl vitae massa venenatis rhoncus. Praesent orci velit, lobortis eget, suscipit semper, congue eu, est. Quisque malesuada volutpat enim. 
+                    </p>
+                    
+                    <!-- Ad -->
+                    <div class="card column-ad">
+                        [Insert Ad Here]
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <a href="./css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
+                <div style="flex-direction: row; margin: 10px;">
+                    <a href="./index.html" class="button footer primary">Home</a>
+                    <a href="./aboutus.html" class="button footer alt">About Us</a>
+                    <a href="./legal/tos.html" class="button footer alt">ToS</a>
+                    <a href="./legal/privacy.html" class="button footer alt">Privacy</a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
