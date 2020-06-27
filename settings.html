@@ -1,0 +1,228 @@
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>Settings | STiBaRC</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/page-specific/settings.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+        
+        <link rel="stylesheet" href="./css/stibarc-css.css">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="./js/signup.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <span class="flex-grow"></span>
+                
+                <!-- Logged Out Buttons -->
+                <span id="loggedout">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search">
+                        <a href="./login.html" class="button m-left m-right primaryAlt">Log In</a> 
+                        <a href="./signup.html" class="button">Sign Up</a>
+                    </span>
+                </span>
+                
+                <!-- Logged In Buttons -->
+                <span id="loggedin">
+			        <span class="nav-items">
+				        <input class="input primaryAlt" placeholder="Search">
+
+				        <img class="pfpButton" tabindex="0">
+				        <button class="button dropdown"><i class="material-icons" style="vertical-align: middle; line-height: 5px; font-size: 1.75rem;">keyboard_arrow_down</i></button>
+			        </span>
+		        </span>
+            </div>
+        </nav>
+        
+        <main class="container nav-margin margin-bottom">
+            
+            <div class="row">
+                
+                <span id="loggedout">
+                    <div class="col s12 loggedout-message">
+                        <h1>It looks like you're not logged in.</h1>
+                        <p>You need to be signed in to use the settings page.</p>
+                        
+                        <div class="loggedout-buttons">
+                            <a class="button primary">Log In</a>
+                            <a class="button alt">Sign Up</a>
+                        </div>
+                    </div>
+                </span>
+                
+                <span id="loggedin">                    
+                    <div class="col s12 m9 loggedin-content">                    
+
+                        <h1>Settings</h1>
+
+                        <!-- Profile Editor -->
+                        <h2>Configure Your Profile</h2>
+                        
+                        <!-- Profile Editor -->
+                        <div class="profile-container">
+                            <img src="design_files/uploadbanner.png" alt="Upload a Banner" class="profile-banner">
+
+                            <div class="profile-information">
+                                <img src="design_files/newjimbo.png" alt="Upload a Profile Picture" class="profile-avatar">
+
+                                <div class="profile-stack">
+                                    <h4 style="margin: 4px; font-size: 1.4rem">Username Here</h4>
+                                    <h5 id="real-name" class="real-name visible" style="font-size: 0.7rem; margin: 4px;">Real Name Here</h5>
+                                    <p id="email" class="email visible" style="font-size: 0.7rem; margin: 4px;"><i>yourname@provider.com</i></p>
+                                    <p id="birthday" class="birthday" style="font-size: 0.7rem; margin: 4px;"><i>xx.xx.xxx</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        
+                        <!-- Profile Options -->
+                        <div style="display: flex; flex-direction: row; width: 27.5rem; justify-content: space-between;">                    
+                            <label class="label">Show Email
+                                <input type="checkbox" checked="checked" onclick="ToggleEmail()">
+                                <span class="checkmark alt">
+                                    <span class="material-icons">check</span>
+                                </span>
+                            </label>    
+
+                            <label class="label">Show Real Name
+                                <input type="checkbox" checked="checked" onclick="ToggleRealName()">
+                                <span class="checkmark alt">
+                                    <span class="material-icons">check</span>
+                                </span>
+                            </label> 
+
+                            <label class="label">Show Birthday
+                                <input type="checkbox" onclick="ToggleBirthday()">
+                                <span class="checkmark alt">
+                                    <span class="material-icons">check</span>
+                                </span>
+                            </label> 
+                        </div>
+                        
+                        <br>
+                        
+                        <!-- Info Editor -->
+                        <h2>Configure Info</h2>
+                        
+                        <h3>Display Name</h3>
+                        <input class="input" type="text" placeholder="[Current display name]">
+                        
+                        <h3>Email</h3>
+                        <input class="input" type="email" placeholder="[Current email]">
+                        
+                        <h3>Birthday</h3>
+                        <input class="input" type="date" placeholder="[Current birthday]">
+                        
+                        <h3>Bio</h3>
+                        <textarea name="Quick Post Content" placeholder="[Current bio]"></textarea>
+                        
+                        <br>
+                        
+                        <!-- Configure Appearance -->
+                        <h2>Configure Appearance</h2>
+                        
+                        <h3>Theme</h3>
+                        
+                        <select name="theme" id="theme">
+                            <optgroup label="Default">
+                                <option value="Default Dynamic">Default Dynamic</option>
+                                <option value="Default Light">Default Light</option>
+                                <option value="Default Dark">Default Dark</option>
+                                <option value="Extreme Light">Extreme Light</option>
+                                <option value="OLED Dark">OLED Dark</option>
+                            </optgroup>
+                            <optgroup label="Clients">
+                                <option value="BaSTPC Classic">BaSTPC Classic</option>
+                                <option value="BaSTPC Red">BaSTPC Red</option>
+                                <option value="Aurora Green">Aurora Green</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                                <option value="Custom Theme">Custom Theme</option>
+                            </optgroup>
+                        </select>
+                        
+                        <br>
+                        
+                        <button class="button alt">Build a Theme</button>
+                        
+                        <br>
+                        
+                        <!-- Advanced -->
+                        <h2>Advanced Settings</h2>
+                        
+                        <div class="sbs-buttons">
+                            <button class="button primary">Change Password</button>
+                            <button class="button alt">Request Verification</button>
+                        </div>
+                        
+                        <br>
+                        
+                        <!-- Legal -->
+                        <h2>Legal Information</h2>
+                        
+                        <div class="sbs-buttons">
+                            <a class="button primary" href="legal/privacy.html">Privacy Policy</a>
+                            <a class="button alt" href="legal/tos.html">Terms of Service</a>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col s12 m3 sidebar">
+                        
+                        <div class="card jumpto">
+                            <h3>Jump to:</h3>
+                            
+                            <ul>
+                                <li>Profile</li>
+                                <li>Info</li>
+                                <li>Appearance</li>
+                                <li>Advanced</li>
+                                <li>Legal</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card save">
+                            <button class="button primary">Save Changes</button>
+                        </div>
+                        
+                    </div>
+                </span>
+                
+            </div>
+            
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <a href="./css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
+                <div style="flex-direction: row; margin: 10px;">
+                    <a href="./index.html" class="button footer primary">Home</a>
+                    <a href="./aboutus.html" class="button footer alt">About Us</a>
+                    <a href="./legal/tos.html" class="button footer alt">ToS</a>
+                    <a href="./legal/privacy.html" class="button footer alt">Privacy</a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

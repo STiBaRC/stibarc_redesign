@@ -19,7 +19,7 @@
 
 
 /* - TEMP - */
-    #loggedin {
+    #loggedout {
         display: none;
     }
 
@@ -292,6 +292,10 @@
         background-color: var(--primaryLight);
     }
 
+    .label input:checked ~ .checkmark.alt {
+        background-color: var(--temp);
+    }
+
     .label input ~ .checkmark .material-icons {
         display: none;
     }
@@ -314,6 +318,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .checkmark.alt {
+        border: 1px solid var(--outline);
+        background-color: var(--fill);
+        color: var(--outline);
     }
 
     .checkmark .material-icons {
