@@ -1,0 +1,175 @@
+<!-- SEARCH -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>Search | STiBaRC</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/page-specific/search.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+        
+        <link rel="stylesheet" href="./css/stibarc-css.css">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="./js/post.js"></script>
+        
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <span class="flex-grow"></span>
+                
+                <!-- Logged Out Buttons -->
+                <span id="loggedout">
+                    <span class="nav-items">
+                        <input class="input primaryAlt" placeholder="Search">
+                        <a href="./login.html" class="button m-left m-right primaryAlt">Log In</a> 
+                        <a href="./signup.html" class="button">Sign Up</a>
+                    </span>
+                </span>
+                
+                <!-- Logged In Buttons -->
+                <span id="loggedin">
+			        <span class="nav-items">
+				        <input class="input primaryAlt" placeholder="Search">
+
+				        <img class="pfpButton" tabindex="0">
+				        <button class="button dropdown"><i class="material-icons" style="vertical-align: middle; line-height: 5px; font-size: 1.75rem;">keyboard_arrow_down</i></button>
+			        </span>
+		        </span>
+            </div>
+        </nav>
+        
+        <main class="container nav-margin margin-bottom">
+            
+            <div class="row">
+
+                <div class="col s12">
+                    
+                    <h1>"[Search Query]"</h1>
+                    
+                    <div class="card result">
+                        <h2>Users</h2>
+                        
+                        <div class="result-users-content">
+                            
+                            <!-- User Card -->
+                            <div class="card-user">
+                                <img src="design_files/newjimbo.png" alt="user avatar">
+
+                                <div class="profile-info">
+                                    <div class="profile-name">
+                                        <h3>Username</h3>
+                                        <span class="material-icons">verified_user</span>
+                                    </div>
+                                    <h4>300 Followers</h4>
+                                </div>
+                            </div>
+                            
+                            <!-- User Card -->
+                            <div class="card-user">
+                                <img src="design_files/newjimbo.png" alt="user avatar">
+
+                                <div class="profile-info">
+                                    <div class="profile-name">
+                                        <h3>Username</h3>
+                                        <span class="material-icons">verified_user</span>
+                                    </div>
+                                    <h4>300 Followers</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="card result">
+                        <h2>Posts</h2>
+                        
+                        <div class="result-posts-content">
+                            
+                            <!-- Large Card -->
+                            <div class="card post"> 
+                                <span class="content">
+                                    <div class="post-info">
+                                        <img src="./design_files/newjimbo.png" alt="Profile picture" height="50px">
+                                        <div class="post-name" style="flex-grow: 1;">
+                                            <h2 style="line-height: 0rem;">Post Title</h2>
+                                            <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                                        </div>
+                                        <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
+                                    </div>
+                                    <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
+                                        Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                                    </p>
+                                </span>
+                                <span class="embed">
+                                    <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                                </span>
+                            </div>
+                            
+                            <!-- Separator -->
+                            <span class="sep"></span>
+                            
+                            <!-- Large Card -->
+                            <div class="card post"> 
+                                <span class="content">
+                                    <div class="post-info">
+                                        <img src="./design_files/newjimbo.png" alt="Profile picture" height="50px">
+                                        <div class="post-name" style="flex-grow: 1;">
+                                            <h2 style="line-height: 0rem;">Post Title</h2>
+                                            <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
+                                        </div>
+                                        <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
+                                    </div>
+                                    <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
+                                        Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                                    </p>
+                                </span>
+                                <span class="embed">
+                                    <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                                </span>
+                            </div>
+                            
+                            <button class="button alt">
+                                Load More
+                            </button>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <a href="./css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
+                <div style="flex-direction: row; margin: 10px;">
+                    <a href="./index.html" class="button footer primary">Home</a>
+                    <a href="./aboutus.html" class="button footer alt">About Us</a>
+                    <a href="./legal/tos.html" class="button footer alt">ToS</a>
+                    <a href="./legal/privacy.html" class="button footer alt">Privacy</a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

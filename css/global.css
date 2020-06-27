@@ -107,6 +107,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        
         background-color: var(--fill);
         border: 1px solid var(--outline);
         border-radius: 8px;
@@ -118,29 +119,31 @@
         padding-bottom: 1rem;
     }
 
+    .card.post:hover, .card.column-ad:hover {
+        background-color: var(--white);
+        color: var(--text);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
     /* Post Cards */
-    .card.large, .card.small {
+    .card.post {
         margin-bottom: 20px;
     }
 
-    .card.content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .profile-info {
+    .post-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .profile-info img {
+    .post-info img {
         max-width: 50px; 
         border-radius: 50%; 
         margin-right: 20px;
     }
 
-    .profile-name {
+    .post-name {
         display: flex;
         flex-direction: column;
         align-content: flex-end;
@@ -148,11 +151,6 @@
 
     .card h1, .card h2, .card h3 {
         color: var(--text);
-    }
-
-    .embed img {
-        height: 170px;
-        max-width: 800px;
     }
 
     /* Quick Post */

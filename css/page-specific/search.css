@@ -1,0 +1,99 @@
+/* Page Elements */
+.result {
+    margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.result > h2 {
+    margin: 10px;
+}
+
+.result-users-content {
+    display: flex;
+    flex-direction: row; 
+    
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.result-posts-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-posts-content > .sep {
+    height: 0px;
+    border-bottom: 1px solid var(--outline);
+    margin: 10px;
+}
+
+.result-posts-content > .button {
+    margin-top: 2rem;
+}
+
+/* Cards */
+.card-user {
+    padding: 20px;
+    margin-right: 10px;
+    
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-user:hover {
+    background-color: var(--white);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.card-user > img {
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.card.post {
+    margin: 0px;
+    
+    border: none;
+    border-radius: 0px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Profile Elements */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info > h4 {
+    margin: 0px;
+    
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 1rem;
+}
+
+.profile-name > h3 {
+    margin: 5px;
+}
