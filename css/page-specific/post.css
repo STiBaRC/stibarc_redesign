@@ -1,4 +1,9 @@
 /* General Elements */
+.card.post:hover {
+    background-color: var(--fill);
+    cursor: pointer;
+}
+
 .card-post > a {
     font-style: italic;
 }
