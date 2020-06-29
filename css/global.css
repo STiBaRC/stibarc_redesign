@@ -228,7 +228,7 @@ h1, h2, h3 {
     border-radius: 25px;
     border: 1px solid var(--backgroundLight);
     background-color: var(--primaryShapeLight);
-    color: var(--backgroundLight);
+    color: var(--textLight);
 }
 .input.primaryAlt:focus{
     outline: none;
