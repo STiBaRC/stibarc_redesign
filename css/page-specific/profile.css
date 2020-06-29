@@ -6,7 +6,7 @@
 
 .profile-image {
     border-radius: 50%;
-    border: 5px solid var(--white);
+    border: 5px solid var(--backgroundLight);
     
     width: 150px;
     
@@ -64,12 +64,12 @@
     font-size: 17px;
     border-radius: 25px;
     font-weight: 500;
-    background-color: var(--outline);
-    color: var(--white);
+    background-color: var(--backgroundDark);
+    color: var(--textLight);
 }
 
 .role.primary {
-    background-color: var(--primary);
+    background-color: var(--primaryShape);
 }
 
 .role.round {

@@ -1,39 +1,43 @@
 :root {
-    --primary: #2c63a5;
-    --primaryLightAlt: #306aaf;
-    --primaryLight: #4c7bb4;
-    --primaryDark: #1c4a80;
-    --primaryNegative: #CC6C4F;
-    --outline: #b3b3b3;
-    --fill: #f2f2f2;
-    --white: #ffffff;
-    --temp: #e5e5e5;
+    --primaryShape: #2c63a5;
+    --primaryShapeLight: #4c7bb4;
+    --primaryShapeDark: #1c4a80;
+    
+    --primaryText: #2c63a5;    
+    --primaryTextLight: #4c7bb4;
+    --primaryTextDark: #1c4a80;
+    
+    --secondaryShape: #CC6C4F;
+    --secondaryText: #CC6C4F;
+    
+    --background: #f2f2f2;
+    --backgroundDark: #b3b3b3;
+    --backgroundLight: #ffffff;
+    --backgroundTemp: #e5e5e5;
+    
     --text: #808080;
-    --textAlt: #ffffff;
-    --alphaDark: rgba(255, 255, 255, 0.08);
-    --alpha: rgba(255, 255, 255, 0.15);
-    --alphaHover: rgba(255, 255, 255, 0.18);
-    --alphaActive: rgba(255, 255, 255, 0.35);
-    --alphaLight: rgba(255, 255, 255, 0.75);
+    --textLight: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: #224D82;
-        --primaryLightAlt: #2c63a5;
-        --primaryLight: #2c63a5;
-        --primaryDark: #1c4a80;
-        --primaryNegative: #CC6C4F;
-        --outline: #1A1A1A;
-        --fill: #3F3F3F;
-        --white: #333333;
-        --temp: #333333;
+        --primaryShape: #1c4a80;
+        --primaryShapeLight: #2c63a5;
+        --primaryShapeDark: #1c4a80;
+    
+        --primaryText: #ffffff;    
+        --primaryTextLight: #ffffff;
+        --primaryTextDark: #e5e5e5;
+    
+        --secondaryShape: #ffffff;
+        --secondaryText: #ffffff;
+    
+        --background: #3F3F3F;
+        --backgroundDark: #1A1A1A;
+        --backgroundLight: #333333;
+        --backgroundTemp: #333333;
+    
         --text: #ffffff;
-        --textAlt: #ffffff;
-        --alphaDark: rgba(255, 255, 255, 0.08);
-        --alpha: rgba(255, 255, 255, 0.15);
-        --alphaHover: rgba(255, 255, 255, 0.18);
-        --alphaActive: rgba(255, 255, 255, 0.35);
-        --alphaLight: rgba(255, 255, 255, 0.75);
+        --textLight: #ffffff;
     }
 }

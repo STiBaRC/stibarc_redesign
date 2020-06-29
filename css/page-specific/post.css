@@ -1,6 +1,6 @@
 /* General Elements */
 .card.post:hover {
-    background-color: var(--fill);
+    background-color: var(--background);
     cursor: pointer;
 }
 
@@ -32,7 +32,7 @@
     flex-direction: row;
     align-items: center;
     
-    background-color: var(--temp);
+    background-color: var(--backgroundDark);
     border-radius: 1.2rem;
     color: var(--text);
     
@@ -41,11 +41,11 @@
 }
 
 .stat-container.pos {
-    color: var(--primary);
+    color: var(--primaryText);
 }
 
 .stat-container.neg {
-    color: var(--primaryNegative);
+    color: var(--secondaryText);
 }
 
 
