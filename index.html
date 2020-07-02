@@ -29,14 +29,17 @@
         <!-- Nav Bar -->
         <nav class="nav">
             <div class="nav-container">
-                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-large" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-small" href="./"><img src="./design_files/logosquare.png" alt="STiBaRC Logo"></a>
+
                 <span class="flex-grow"></span>
                 
                 <!-- Logged Out Buttons -->
                 <span id="loggedout">
                     <span class="nav-items">
                         <input class="input primaryAlt" placeholder="Search">
-                        <a href="login.html" class="button m-left m-right primaryAlt">Log In</a> 
+                        <a href="" class="button search primaryAlt material-icons">search</a> 
+                        <a href="login.html" class="button primaryAlt">Log In</a> 
                         <a href="signup.html" class="button">Sign Up</a>
                     </span>
                 </span>
@@ -45,6 +48,7 @@
                 <span id="loggedin">
 			        <span class="nav-items">
 				        <input class="input primaryAlt" placeholder="Search">
+                        <a href="" class="button search primaryAlt material-icons">search</a> 
 
 				        <img class="pfpButton" tabindex="0">
 				        <button class="button dropdown"><i class="material-icons" style="vertical-align: middle; line-height: 5px; font-size: 1.75rem;">keyboard_arrow_down</i></button>
@@ -103,22 +107,40 @@
                     
                     <!-- Large Card -->
                     <a class="card post" href="post.html"> 
-                        <span class="content">
-                            <div class="post-info">
-                                <img src="./design_files/newjimbo.png" alt="Profile picture" height="50px">
-                                <div class="post-name" style="flex-grow: 1;">
-                                    <h2 style="line-height: 0rem;">Post Title</h2>
-                                    <h7 style="line-height: 0rem;"><i>Post Author</i></h7>
-                                </div>
-                                <h6 style="flex-grow: 1"> <i>4 Hours Ago</i></h6>
+                        <div class="post-info">
+                            <img src="./design_files/newjimbo.png" alt="Profile picture" height="50px">
+                            <div class="post-name" style="flex-grow: 1;">
+                                <h2>Post Title</h2>
+                                <h7><i>Post Author</i></h7>
                             </div>
-                            <p style="text-align: justify; max-width: 90%; max-height: 75px; overflow: hidden;">
-                                Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
-                            </p>
-                        </span>
-                        <span class="embed">
-                            <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
-                        </span>
+                            <div class="post-stats">  
+                                <div class="post-votes">
+                                    <div class="stat-con-small pos">
+                                        <span class="material-icons" style="font-size: 15px; margin-right: 10px;">
+                                            thumb_up
+                                        </span>
+                                        <h5 style="font-size: 12px;">114K</h5>
+                                    </div>
+                                    <div class="stat-con-small neg">
+                                        <span class="material-icons" style="font-size: 15px; margin-right: 10px;">
+                                            thumb_down
+                                        </span>
+                                        <h5 style="font-size: 12px;">50</h5>
+                                    </div>
+                                </div>
+                                <h6><i>4 Hours Ago</i></h6>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span class="left">
+                                <p style="text-align: justify; max-height: 75px; overflow: hidden;">
+                                    Here is a paragraph. This paragraph would be either the first 3-4 lines of the post, or a set description given by the user upon publishing, although that feature may have to wait until another post making page refresh. This particular card is the larger size, presumably to be used for full posts.
+                                </p>
+                            </span>
+                            <span class="right">
+                                <img src="./sample_assets/placeholderimage.png" alt="Embed placeholder">
+                            </span>
+                        </div>
                     </a>
                     
                     <br>

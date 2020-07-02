@@ -32,7 +32,7 @@
     flex-direction: row;
     align-items: center;
     
-    background-color: var(--backgroundDark);
+    background-color: var(--background);
     border-radius: 1.2rem;
     color: var(--text);
     

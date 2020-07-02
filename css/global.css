@@ -104,7 +104,7 @@ h1, h2, h3 {
 /* Cards */
 .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     
     background-color: var(--background);
@@ -131,9 +131,11 @@ h1, h2, h3 {
 }
 
 .post-info {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .post-info img {
@@ -148,8 +150,60 @@ h1, h2, h3 {
     align-content: flex-end;
 }
 
+.post-stats {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    
+    text-align: right;
+}
+
+.post-stats > h6 {
+    margin: 10px;
+}
+
+.post-votes {
+    display: flex;
+}
+
+.stat-con-small {
+    background-color: var(--backgroundTemp);
+    
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.2rem;
+    margin: 0.2rem;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-con-small > .material-icons, .stat-con-small > h5 {
+    margin: 0px;
+}
+
+.stat-con-small.pos {
+    color: var(--primaryText);
+}
+
+.stat-con-small.neg {
+    color: var(--secondaryText);
+}
+
 .card h1, .card h2, .card h3 {
     color: var(--text);
+    margin: 0px;
+}
+
+.card > .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.card > .content p {
+    margin-right: 1rem;
 }
 
 /* Quick Post */
@@ -164,6 +218,7 @@ h1, h2, h3 {
 /* Ad Cards */
 .column-ad {
     justify-content: center;
+    text-align: center;
 
     padding: 2rem;
     margin-top: 20px;
@@ -429,6 +484,12 @@ label {
     padding: 8px 1.25rem;
 }
 
+.button.material-icons {
+    font-size: 20px;
+    
+    padding: 8px 1rem;
+}
+
 /* Nav */
 .nav-height {
     margin-top: 4.25rem;
@@ -460,7 +521,7 @@ label {
     font-size: 2rem;
     font-weight: 700;
 }
-.nav .logo img{
+.nav .logo img {
     height: 25px;
 }
 .nav a:not(.button){
@@ -472,12 +533,16 @@ label {
     align-items: center;
 }
 
+.nav-items > .button {
+    margin-left: 10px;
+}
+
 .pfpButton {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
     border: none;
-    margin: 0 1.5rem;
+    margin-left: 10px;
     padding: 1.225rem;
     background: #ccc url("../design_files/newjimbo.png?raw=true");
     background-size: cover;
@@ -554,6 +619,67 @@ label {
 }
 .m-left {
     margin-left: .75rem;
+}
+
+
+/* - Media Queries - */
+@media only screen and (min-width: 800px) {
+    .logo-small img {
+        display: none;
+    }
+    
+    .button.search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    /* Nav Items */
+    .nav-items > .input.primaryAlt {
+        display: none;
+    }
+    
+    .logo-large img {
+        display: none;
+    }
+    
+    .button {
+        font-size: 15px;
+        
+        padding: 8px 1.5rem;
+    }
+    
+    /* Hero Header */
+    .hero.large > h1 {
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {    
+    
+    /* Nav Items */
+    .button.search {
+        display: none;
+    }
+    
+    .nav-container {
+        margin: 1rem;
+    }
+    
+    /* Post Cards */
+    .card.post > .content {
+        flex-direction: column;
+    }
+    
+    .card.post > .content p {
+        margin-right: 0px;
+    }
+    
+    .post-votes {
+        flex-direction: column;
+    }
 }
 
 
