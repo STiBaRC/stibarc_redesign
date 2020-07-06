@@ -19,7 +19,7 @@
 
 
 /* - TEMP - */
-#loggedin {
+#loggedout {
     display: none;
 }
 
@@ -206,6 +206,7 @@ h1, h2, h3 {
     margin-right: 1rem;
 }
 
+
 /* Quick Post */
 .quick-post {
     display: flex;
@@ -214,6 +215,29 @@ h1, h2, h3 {
 
     margin-bottom: 3rem;
 }
+
+.quick-post-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-post-buttons > .button {
+    margin: 5px;
+}
+
+
+/* Recent Posts Header */
+.post-header {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.post-header-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* Ad Cards */
 .column-ad {
@@ -599,6 +623,18 @@ label {
     justify-content: center;
 }
 
+.footer-buttons {
+    display: flex;
+    flex-direction: row;         
+    flex-wrap: wrap;
+    
+    margin: 10px;
+}
+
+.footer-buttons > .button {
+    margin: 5px;
+}
+
 
 /* Misc */
 .divider {
@@ -657,15 +693,33 @@ label {
     
 }
 
-@media only screen and (max-width: 400px) {    
+@media only screen and (max-width: 500px) {
     
-    /* Nav Items */
-    .button.search {
-        display: none;
+    /* Quick Post */
+    .quick-post {
+        flex-direction: column;
     }
     
-    .nav-container {
-        margin: 1rem;
+    .quick-post-buttons {
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        width: 100%;
+        
+        margin-top: 5px;
+    }
+    
+    .quick-post-buttons > .button {
+        margin: 0px;
+    }
+    
+    /* Post Header */
+    .post-header {
+        flex-direction: column;
+    }
+    
+    .post-header > h1 {
+        margin: 5px;
     }
     
     /* Post Cards */
@@ -679,6 +733,69 @@ label {
     
     .post-votes {
         flex-direction: column;
+    }
+    
+    /* Footer */
+    .footer-buttons {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-buttons > .button {
+        margin: 2px;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) {    
+    
+    /* Nav Items */
+    .button.search {
+        display: none;
+    }
+    
+    .nav-container {
+        margin: 1rem;
+    }    
+    
+    /* Post Header */
+    .post-header-buttons > .button {
+        padding: 
+    }
+    
+    /* Post Cards */
+    .card.post > .post-info {
+        flex-direction: column;
+    }
+    
+    .post-votes {
+        flex-direction: row;
+    }
+    
+    .post-stats {
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .post-info > img {
+        margin: 5px;
+    }
+    
+    .left > p {
+        margin-top: 5px;
+    }
+    
+    /* Footer */
+    .footer-buttons {
+        justify-content: center;
+        align-items: center;
     }
 }
 

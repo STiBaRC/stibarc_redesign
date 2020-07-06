@@ -86,7 +86,11 @@
                         
                         <div class="card quick-post">
                             <textarea name="Quick Post Content" placeholder="Make a Post..."></textarea>
-                            <div style="flex-direction: column;">                          
+                            <div class="quick-post-buttons"> 
+                                <a class="button icon alt" style="margin-left: 1rem;" href="#">
+                                    <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">attach_file</i>
+                                </a>
+                                
                                 <a class="button icon primary" style="margin-left: 1rem;" href="#">
                                     <i class="material-icons" style="font-size: 1rem; vertical-align: middle;">send</i>
                                 </a>
@@ -94,10 +98,12 @@
                         </div>
                         
                         <!-- View Posts Header -->
-                        <div style="display: flex; align-items: center; margin-bottom: 1rem">
+                        <div class="post-header">
                             <h1 style="margin-right: 1rem; vertical-align: middle;" class="primary-text flex-grow">Recent Posts</h1>
-                            <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a>
-                            <a class="button alt" href="#">Followed Feed</a>
+                            <div class="post-header-buttons">
+                                <a class="button primary" style="margin-right: 1rem;" href="#">Global Feed</a>
+                                <a class="button alt" href="#">Followed Feed</a>
+                            </div>
                         </div>
                     </span>
                     
@@ -194,7 +200,7 @@
         <footer>
             <div class="footer-container">
                 <a href="./css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
-                <div style="flex-direction: row; margin: 10px;">
+                <div class="footer-buttons">
                     <a href="./index.html" class="button footer primary">Home</a>
                     <a href="./aboutus.html" class="button footer alt">About Us</a>
                     <a href="./legal/tos.html" class="button footer alt">ToS</a>
