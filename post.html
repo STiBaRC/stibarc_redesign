@@ -32,15 +32,18 @@
         <!-- Nav Bar -->
         <nav class="nav">
             <div class="nav-container">
-                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-large" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-small" href="./"><img src="./design_files/logosquare.png" alt="STiBaRC Logo"></a>
+
                 <span class="flex-grow"></span>
                 
                 <!-- Logged Out Buttons -->
                 <span id="loggedout">
                     <span class="nav-items">
                         <input class="input primaryAlt" placeholder="Search">
-                        <a href="./login.html" class="button m-left m-right primaryAlt">Log In</a> 
-                        <a href="./signup.html" class="button">Sign Up</a>
+                        <a href="" class="button search primaryAlt material-icons">search</a> 
+                        <a href="login.html" class="button primaryAlt">Log In</a> 
+                        <a href="signup.html" class="button">Sign Up</a>
                     </span>
                 </span>
                 
@@ -48,6 +51,7 @@
                 <span id="loggedin">
 			        <span class="nav-items">
 				        <input class="input primaryAlt" placeholder="Search">
+                        <a href="" class="button search primaryAlt material-icons">search</a> 
 
 				        <img class="pfpButton" tabindex="0">
 				        <button class="button dropdown"><i class="material-icons" style="vertical-align: middle; line-height: 5px; font-size: 1.75rem;">keyboard_arrow_down</i></button>
@@ -140,7 +144,7 @@
                                 </button>
                                 
                                 <!-- Drop Down Content -->
-                                <div id="commentDropdown" class="card commentDropdown">
+                                <div id="commentDropdown" class="card comment-dropdown">
                                     <a href="#">
                                         <span class="material-icons" style="font-size: 18px; margin-right: 1rem;">reply</span>
                                         Reply

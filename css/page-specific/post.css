@@ -142,7 +142,7 @@ textarea {
 }
 
 /* Comment Dropdown */
-.commentDropdown {
+.comment-dropdown {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ textarea {
     display: flex;
 }
 
-.commentDropdown > a {
+.comment-dropdown > a {
     margin: 0.5rem;
     
     display: flex;
@@ -204,6 +204,10 @@ textarea {
     /* Comments */
     .post-actions > .button {
         margin-top: 10px;
+    }
+    
+    .comment-dropdown {
+         transform: translate(-70px, 40px);
     }
 }
 
