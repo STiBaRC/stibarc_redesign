@@ -167,3 +167,79 @@ textarea {
     align-content: center;
     justify-content: center;
 }
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+    
+    /* Header */
+    .title-header {
+        justify-content: space-between;
+    }
+    
+    .title-info {
+        padding: 0px;
+    }
+    
+    .post-stats {
+        flex-direction: column;
+    }
+    
+    .stat-container {
+        margin: 5px;
+    }
+    
+    
+    /* Post Content */
+    .post-embeds {
+        flex-direction: column;
+    }
+    
+    .post-embeds > img {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    /* Comments */
+    .post-actions > .button {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    
+    /* Header */
+    .title-header {
+        flex-direction: column;
+    }
+    
+    .title-info {
+        text-align: center;
+    }
+    
+    .post-stats {
+        flex-direction: row;
+    }
+    
+    /* Comments */
+    .comment {
+        flex-direction: column;
+    }
+    
+    .comment-profile > img {
+         margin-left: 0px;
+    }
+    
+    .comment-content {
+        justify-content: flex-start;
+    }
+    
+    .comment-content > p {
+        margin: 0px;
+    }
+    
+    .comment > .right {
+        margin-bottom: 10px;
+    }
+}
