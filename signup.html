@@ -28,13 +28,15 @@
     
         <nav class="nav">
             <div class="nav-container">
-                <a class="logo" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-large" href="./"><img src="./design_files/logo.png" alt="STiBaRC Logo"></a>
+                <a class="logo logo-small" href="./"><img src="./design_files/logosquare.png" alt="STiBaRC Logo"></a>
+                
                 <span class="flex-grow"></span>
                 
                 <span class="nav-items"> 
-                    <h5 style="float: left; vertical-align: middle; line-height: 0px; margin-right: 10px"><i>Already Have an Account?</i></h5>
-                    <a class="button primaryAlt" href="login.html" style="margin-right: 4rem; vertical-align: middle">Log In</a>
-                    <a href="./" class="button icon"><i class="material-icons" style="font-size: 1rem; vertical-align: middle">close</i></a>
+                    <h5><i>Already Have an Account?</i></h5>
+                    <a class="button primaryAlt signup" href="signup.html">Log In</a>
+                    <a href="./" class="button icon"><i class="material-icons" style="font-size: 1rem;">close</i></a>
                 </span>
             </div>
         </nav>
@@ -165,7 +167,7 @@
                 <h1>Options</h1>
                 
                 <!-- Profile Options -->
-                <div style="display: flex; flex-direction: row; width: 27.5rem; justify-content: space-between;">                    
+                <div class="profile-options">                    
                     <label class="label">Show Email
                         <input type="checkbox" checked="checked" onclick="ToggleEmail()">
                         <span class="checkmark">
@@ -207,7 +209,7 @@
         <footer>
             <div class="footer-container">
                 <a href="./css.html" style="text-align: center"><i> © 2020 STiBaRC Team</i></a>
-                <div style="flex-direction: row; margin: 10px;">
+                <div class="footer-buttons">
                     <a href="./index.html" class="button footer primary">Home</a>
                     <a href="./aboutus.html" class="button footer alt">About Us</a>
                     <a href="./legal/tos.html" class="button footer alt">ToS</a>
