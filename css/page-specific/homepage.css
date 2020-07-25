@@ -15,3 +15,40 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.activity > img {
+    border-radius: 50%;
+}
+
+.activity > .right {
+    flex-direction: column; 
+    flex-grow: 1; 
+    margin-left: 1rem;
+}
+
+.right > p {
+    margin-bottom: 0px;
+}
+
+.right > h6 {
+    margin: 5px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    
+    /* Activity */
+    .recent-activity {
+        padding: 0px 12px;
+        padding-bottom: 12px;
+    }
+    
+    .right > p {
+        font-size: 15px;
+        text-align: right;
+    }   
+    
+    .right > h6 {
+        text-align: right;
+    }
+}
