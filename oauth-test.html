@@ -24,12 +24,13 @@ CSS testing
             .oauth {
                 max-width: 700px;
                 margin: auto;
+                color: var(--textLight);
             }
             .oauth .app-top {
                 display: flex;
                 align-items: center;
-                border: 1px solid var(--alphaHover);
-                background-color: var(--alphaHover);
+                border: 1px solid var(--primaryShapeLight);
+                background-color: var(--primaryShapeDark);
                 border-bottom: none;
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
@@ -44,7 +45,7 @@ CSS testing
                 display: block;
                 font-size: 1rem;
                 font-weight: 500;
-                color: var(--alphaActive);
+                color: var(--textLight);
                 margin-bottom: .5rem;
                 white-space: nowrap;
                 overflow: hidden;
@@ -54,14 +55,14 @@ CSS testing
                 display: block;
                 font-size: .9rem;
                 font-weight: 400;
-                color: var(--alphaActive);
+                color: var(--textLight);
                 margin-top: .75rem;
                 white-space: normal;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             .oauth .app-logo {
-                background: var(--alpha) center center no-repeat;
+                background: var(--textLight) center center no-repeat;
                 background-size: cover;
                 display: inline-block;
                 width: 75px;
@@ -70,24 +71,24 @@ CSS testing
                 margin-left: 4px;
             }
             .oauth .app-body {
-                border: 1px solid var(--alphaHover);
+                border: 1px solid var(--primaryShapeLight);
                 border-bottom: none;
-                background-color: var(--alpha);
+                background-color: var(--primaryShape);
                 padding: 1.75rem 1.5rem 1.5rem 1.5rem;
-                color: var(--alphaActive);
+                color: var(--textLight);
             }
             .oauth .app-footer {
                 border-bottom-left-radius: 8px;
                 border-bottom-right-radius: 8px;
-                border: 1px solid var(--alphaHover);
-                background-color: var(--alpha);
+                border: 1px solid var(--primaryShapeLight);
+                background-color: var(--primaryShapeDark);
                 padding: 1.5rem 1.5rem 1.5rem 1.5rem;
                 color: var(--alphaActive);
                 display: flex;
                 align-items: center;
             }
             .oauth .app-footer a {
-                color: var(--alphaHover);
+                color: var(--alphaActive);
             }
             .oauth .app-footer a:hover {
                 text-decoration: underline;
@@ -143,12 +144,12 @@ CSS testing
         
         <div class="container">
             
-            <a href="./"><img class="logo" src="https://stibarc.github.io/stibarc_redesign/logo.png"></a>
+            <a href="./"><img class="logo" src="./design_files/logo.png"></a>
             
             <div class="oauth">
                 <div class="app-top">
                     <h1 class="white-text app-title"><div class="top-subtitle">Connect to STiBaRC</div>App title<div class="subtitle"><i>By UserName on 3/22/2020</i></div></h1>
-                    <span class="flex-grow"></span> <div class="app-logo" style="background-image: url('https://stibarc.com/icon.png');"></div>
+                    <span class="flex-grow"></span> <div class="app-logo" style="background-image: url('./design_files/newjimbo.png');"></div>
                 </div>
                 <div class="app-body">
                     <div>This will allow <b>App title</b> to</div>
@@ -160,7 +161,7 @@ CSS testing
                     </ul>
                 </div>
                 <div class="app-footer">
-                    <span><span>Signed in as <b>Username</b></span>&nbsp; <a href="#"><i>Not you?</i></a></span>
+                    <span><span>Signed in as <b>Username</b></span>&nbsp; <a href="#"><i>Not you</i></a>?</span>
                     <span class="flex-grow"></span>
                     <button class="button primaryAlt">Cancel</button><button class="button">Authorize</button>
                 </div>
