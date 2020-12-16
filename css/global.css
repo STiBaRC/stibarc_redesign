@@ -339,6 +339,21 @@ textarea {
     border: none;
 }
 
+input {
+    resize: vertical;
+    width: 100%;
+    min-height: 40px;
+    max-height: 40px;
+        
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+        
+    background-color: var(--backgroundTemp);
+    color: var(--text);
+    border: none;
+}
+
 /* Checkboxes */
 label {
     display: flex;
@@ -698,6 +713,7 @@ label {
     /* Quick Post */
     .quick-post {
         flex-direction: column;
+        margin-top: 4px;
     }
     
     .quick-post-buttons {
@@ -707,6 +723,13 @@ label {
         width: 100%;
         
         margin-top: 5px;
+    }
+    
+    .quick-post-inputs {
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        width: 100%;
     }
     
     .quick-post-buttons > .button {
