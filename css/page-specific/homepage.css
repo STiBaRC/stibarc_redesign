@@ -4,6 +4,7 @@
     flex-direction: column;
     
     padding-top: 0px;
+    margin-top: -4px;
 }
 
 .activity {
